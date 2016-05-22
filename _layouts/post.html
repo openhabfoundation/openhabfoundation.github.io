@@ -1,0 +1,64 @@
+---
+layout: default
+
+---
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">{{ page.title }}
+            <small>by <a href="#">{{ page.author }}</a>
+            </small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="../index.html">Home</a>
+            </li>
+            <li class="active">{{ page.title }}</li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+
+    <!-- Blog Post Content Column -->
+    <div class="col-lg-8">
+
+        <!-- Blog Post -->
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p><i class="fa fa-clock-o"></i> Posted on {{ page.date | date: "%B %-d, %Y" }} at 9:00 PM</p>
+
+        <hr>
+
+        {% if page.previewimage %}
+        <!-- Preview Image -->
+        <img class="img-responsive" src="{{ site.placeholderimagesbaseurl }}{{ page.previewimage }}" alt="">
+        {% endif %}
+
+        <hr>
+
+        <!-- Post Content -->
+        {% if page.excerpt %}
+        <p class="lead">{{ page.excerpt }}</p>
+        {% endif %}
+
+        {{ content }}
+
+    </div>
+
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+        <div class="well">
+            <h4>About our blog</h4>
+            <p>This blog contains post from different openHAB Foundation members - any member is free to share knowledge, news and information about events etc. here.</p>
+        </div>
+
+
+    </div>
+
+</div>
+<!-- /.row -->
