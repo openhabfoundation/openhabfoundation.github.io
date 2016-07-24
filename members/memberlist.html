@@ -11,12 +11,11 @@ layout: default
 <div class="row">
 	<div class="col-lg-12">
 		<h1 class="page-header">
-			Members <small>our list of Members</small>
+			Members <small>our list of organization members</small>
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="{{url_base}}/index.html">Home</a></li>
-			<li><a href="{{url_base}}/members/members.html">Members</a></li>
-			<li class="active">Memberlist</li>
+			<li class="active">Organization members list</li>
 		</ol>
 	</div>
 </div>
@@ -25,36 +24,44 @@ layout: default
 
 <div class="row">
 
-	<!-- Blog Entries Column -->
-	<div class="col-md-8">
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
 
-		<ul>
 
-			{% for m in site.data.members %}
+		{% for m in site.posts reversed %}      
+		  {% if m.categories contains 'cmember' %}
 
 			<!-- Member -->
 			<div class="row">
-				<a href="/members/sites/{{ m.shortname }}.md">
+				<a href="{{ m.url }}">
 					<div class="col-md-3">
-						<img class="img-responsive"
-							src="/members/images/{{ m.shortname }}.png" title="{{ m.name }}"
+					
+					    {% if m.logo %}
+				        	<!-- Logo Image -->
+				        	<img class="img-responsive"
+							src="/members/images/{{ m.logo }}" title="{{ m.name }}"
 							alt="">
+				        {% endif %}
+					
 					</div>
 				</a>
 				<div class="col-md-5">
-					<!-- <h3>{{ m.name }}</h3> -->
-					<h4>{{ m.name }}</h4>
-					<p>{{ m.description }}</p>
-					<a class="btn btn-default btn-sm" href="#">Memberpage<span
-						class="glyphicon"></span></a>
+					<!-- <h3>{{ m.name }}</h3>  {{url_base}}/{{ post.url }} -->
+					<h4>{{ m.title }}</h4>
+					<p>{{ m.content | strip_html | truncatewords: 20 }}</p>
+					<a class="btn btn-default btn-sm" href="{{ m.url }}">Memberpage<span class="glyphicon"></span></a>
+					
 				</div>
 			</div>
 			<!-- /.row -->
 
 			<hr>
+		  {% endif %}
+		{% endfor %}
 
-			{% endfor %}
-			<!-- Pagination -->
+
+		<!-- Pagination -->
+		<ul>
 			<div class="row text-center">
 				<div class="col-lg-12">
 					<ul class="pagination">
@@ -68,9 +75,9 @@ layout: default
 					</ul>
 				</div>
 			</div>
-		</ul>
+        </ul>
 
-	</div>
+    </div>
 
 	<!-- Blog Sidebar Widgets Column -->
 	<div class="col-md-4">
@@ -79,8 +86,7 @@ layout: default
 			<h4>Become a member</h4>
 			<p>Join the openHAB Foundation and make the difference.</p>
 			<a class="btn btn-default btn-sm"
-				href="{{url_base}}/members/become_a_member.html">Register as
-				Member<span class="glyphicon"></span>
+				href="{{url_base}}/members/membership.html">Membership<span class="glyphicon"></span>
 			</a>
 		</div>
 

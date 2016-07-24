@@ -1,5 +1,6 @@
 ---
 layout: post
+category: blog
 title: openHAB 2.0 beta3 Release
 date: '2016-05-23T00:00:00.001+02:00'
 author: Kai Kreuzer

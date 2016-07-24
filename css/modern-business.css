@@ -62,6 +62,12 @@ header.carousel .fill {
     font-size: 20px;
 }
 
+.price sub {
+    top: -2px;
+    left: 5px;
+    font-size: 20px;
+}
+
 .period {
     display: block;
     font-style: italic;
@@ -91,3 +97,63 @@ footer {
         height: 70%;
     }
 }
+
+
+/* START R E S P O N S I V E   C O M P A R I S O N   T A B L E  */
+table{
+    width: 100%;
+    border-collapse: unset;
+}
+.mb_period {
+	margin-bottom: 0.5em;
+}
+.mb_planHeader {
+	padding: 0;
+	margin-bottom: 0;
+    width: 100%;
+    min-width: 250px;
+}
+.mb_planFeature {
+    width: 100%;
+    background: #ffffff;
+}
+
+.mb_planValue {
+    text-align: center;
+    font-size: 2em;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.mb_planValue i.mb_check {
+    color: green;
+}
+
+@media screen and (max-width: 767px) {
+	
+  .mb_planHeader {
+	min-width: 100px;
+  }
+  tr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  td, th {
+    display: block;
+    width: 33%;
+  }
+
+  th:first-child,
+  td:first-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  th:first-child {
+    display: none;
+  }
+}
+/* END R E S P O N S I V E   C O M P A R I S O N   T A B L E  */

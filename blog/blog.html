@@ -28,6 +28,8 @@ layout: default
     <div class="col-md-8">
 
         {% for post in site.posts %}
+		  {% if post.categories contains 'blog' %}
+		  
             <h2>
                 <a href="{{url_base}}/{{ post.url }}">{{ post.title }}</a>
             </h2>
@@ -45,6 +47,7 @@ layout: default
 
             <hr>
 
+		  {% endif %}
         {% endfor %}
 
         <!-- Pager -->
@@ -65,7 +68,7 @@ layout: default
         <div class="well">
             <h4>About our blog</h4>
             <p>This blog contains post from different openHAB Foundation members - any member is free to share knowledge, news and information about events etc. here.</p>
-            <p>Subscribe to our <a href="{{url_base}}/blog/feed.xml">RSS feed</a></p>
+            <p>Subscribe to our <a href="{{url_base}}/feed.xml">RSS feed</a></p>
         </div>
 
     </div>
