@@ -11,11 +11,11 @@ layout: default
 <div class="row">
 	<div class="col-lg-12">
 		<h1 class="page-header">
-			Members <small>our list of organization members</small>
+			Organization Members
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="{{url_base}}/index.html">Home</a></li>
-			<li class="active">Organization members list</li>
+			<li class="active">Organization Members</li>
 		</ol>
 	</div>
 </div>
@@ -49,7 +49,7 @@ layout: default
 					<!-- <h3>{{ m.name }}</h3>  {{url_base}}/{{ post.url }} -->
 					<h4>{{ m.title }}</h4>
 					<p>{{ m.content | strip_html | truncatewords: 20 }}</p>
-					<a class="btn btn-default btn-sm" href="{{ m.url }}">Memberpage<span class="glyphicon"></span></a>
+					<a class="btn btn-default btn-sm" href="{{ m.url }}">Member Details<span class="glyphicon"></span></a>
 					
 				</div>
 			</div>
@@ -61,7 +61,7 @@ layout: default
 
 
 		<!-- Pagination -->
-		<ul>
+<!--		<ul>
 			<div class="row text-center">
 				<div class="col-lg-12">
 					<ul class="pagination">
@@ -76,15 +76,15 @@ layout: default
 				</div>
 			</div>
         </ul>
-
+-->
     </div>
 
 	<!-- Blog Sidebar Widgets Column -->
 	<div class="col-md-4">
 
 		<div class="well">
-			<h4>Become a member</h4>
-			<p>Join the openHAB Foundation and make the difference.</p>
+			<h4>Become a Member</h4>
+			<p>Join the openHAB Foundation and make the difference!</p>
 			<a class="btn btn-default btn-sm"
 				href="{{url_base}}/members/membership.html">Membership<span class="glyphicon"></span>
 			</a>

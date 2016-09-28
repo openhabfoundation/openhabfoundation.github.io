@@ -5,13 +5,10 @@ layout: default
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">{{ page.title }}
-            <small>by <a href="#">{{ page.author }}</a>
-            </small>
-        </h1>
+        <h1 class="page-header">{{ page.title }}</h1>
         <ol class="breadcrumb">        
 			<li><a href="{{url_base}}/index.html">Home</a></li>
-			<li><a href="{{url_base}}/members/memberlist.html">Organization member list</a></li>
+			<li><a href="{{url_base}}/members/memberlist.html">Organization Members</a></li>
             <li class="active">{{ page.title }}</li>
         </ol>
     </div>
@@ -24,23 +21,14 @@ layout: default
     <!-- Blog Post Content Column -->
     <div class="col-lg-8">
 
-        <!-- Blog Post -->
-
-        <hr>
-
-        <!-- Date/Time -->
-        <p><i class="fa fa-clock-o"></i> member since {{ page.date | date: "%B %-d, %Y" }}</p>
-
-        <hr>
-
         {% if page.logo %}
         <!-- Preview Image -->
         <img class="img-responsive" src="/members/images/{{ page.logo }}" alt="">
         {% endif %}
 
-        <hr>
+		<p/>
 
-        <!-- Post Content -->
+        <!-- Member Content -->
 
         {{ content }}
 
@@ -68,19 +56,6 @@ layout: default
 	        {% if page.twitter %}<p><i class="fa fa-twitter"></i><abbr title="Twitter"></abbr>&#160;<a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a></p>{% endif %}
 	        {% if page.github %}<p><i class="fa fa-github"></i><abbr title="Github"></abbr>&#160;<a href="https://github.com/{{ page.github }}">{{ page.github }}</a></p>{% endif %}
         </div>
-
-
-    </div>
-
-    <!-- Blog Sidebar Widgets Column -->
-    <div class="col-md-4">
-
-        <div class="well">
-            <h4>About our organization member pages</h4>
-            <p>This pages contains informations from our openHAB Foundation organization members - any organization member is free to share knowledge, news and information about itself here. Each organization is responsible for the content.</p>
-        </div>
-
-
     </div>
 
 </div>
