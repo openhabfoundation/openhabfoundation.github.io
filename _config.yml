@@ -16,3 +16,7 @@ permalink: /:year/:title
 # These are new (in addition to Jekyll's elements above )
 organization: openHAB Foundation e.V.
 placeholderimagesbaseurl: 
+
+# You can specify your own separator, of course. 
+# Use {{ m.excerpt }} in your .md Files in blog/_posts or members/_posts
+excerpt_separator: <!--more-->  
