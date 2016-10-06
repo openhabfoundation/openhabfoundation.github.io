@@ -39,14 +39,14 @@ layout: default
 					    {% if m.logo %}
 				        	<!-- Logo Image -->
 				        	<img class="img-responsive mb_img_memberlist"
-							src="/members/images/{{ m.logo }}" title="{{ m.title }}"
+							src="/members/images/{{ m.logo }}" title="{{ m.name }}"
 							alt="">
 				        {% endif %}
 					
 					</div>
 				</a>
 				<div class="col-md-9">
-					<h4 class="mb_remove_margintop">{{ m.title }}</h4>
+					<h4 class="mb_remove_margintop">{{ m.name }}</h4>
 					<p>{{ m.excerpt | strip_html | truncatewords: 80 }}</p>
 					<a class="btn btn-default btn-sm" href="{{ m.url }}">Member Details<span class="glyphicon"></span></a>
 					
