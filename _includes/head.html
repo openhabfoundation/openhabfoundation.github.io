@@ -11,7 +11,9 @@
     <meta name="author" content="">
 
     <title>
-      {% if page.title %}
+      {% if page.name %}
+        {{ page.name }}
+      {% else if page.title %}
         {{ page.title }}
       {% else %}
         {{ site.title }}
