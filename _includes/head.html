@@ -11,7 +11,13 @@
     <meta name="author" content="">
 
     <title>
-      {% if page.title %}
+      {% if page.name %}
+        {% if page.name contains '.html'%}
+          {{ site.title }}
+        {% else %}
+          {{ page.name }}
+        {% endif %}
+      {% else if page.title %}
         {{ page.title }}
       {% else %}
         {{ site.title }}

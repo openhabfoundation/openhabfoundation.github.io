@@ -102,7 +102,16 @@ footer {
 
 
 .mb_img_memberpage{
-    max-height: 300px;
+    max-height: 250px;
+}
+
+.mb_img_memberlist {
+    max-height: 260px;
+    padding-bottom: 10px;
+}
+
+.mb_remove_margintop {
+    margin-top: -2px;
 }
 
 .mb_img{
