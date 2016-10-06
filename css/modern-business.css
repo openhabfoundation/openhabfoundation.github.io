@@ -100,9 +100,15 @@ footer {
 
 /* START MEMBER PAGES */
 
+
+.mb_img_memberpage{
+    max-height: 300px;
+}
+
 .mb_img{
 	width: 250px;
 }
+
 .mb_panel-heading{
     padding: unset;
     /*color: #333;
