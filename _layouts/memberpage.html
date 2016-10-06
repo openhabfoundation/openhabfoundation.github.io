@@ -5,11 +5,11 @@ layout: default
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">{{ page.title }}</h1>
+        <h1 class="page-header">{{ page.name }}</h1>
         <ol class="breadcrumb">        
 			<li><a href="{{url_base}}/index.html">Home</a></li>
 			<li><a href="{{url_base}}/members/memberlist.html">Organization Members</a></li>
-            <li class="active">{{ page.title }}</li>
+            <li class="active">{{ page.name }}</li>
         </ol>
     </div>
 </div>
@@ -23,7 +23,7 @@ layout: default
 
         {% if page.logo %}
         <!-- Preview Image -->
-        <img class="img-responsive" src="/members/images/{{ page.logo }}" alt="">
+        <img class="img-responsive mb_img_memberpage" src="/members/images/{{ page.logo }}" alt="">
         {% endif %}
 
 		<p/>
