@@ -46,15 +46,15 @@ layout: default
 	        <!-- Contact Details Column -->
 	        <h3>Contact Details</h3>
 	        <p>
-	            {% if page.name %}<b>{{ page.name }}</b><br>{% endif %}
+	            {% if page.name     %}<b>{{ page.name  }}</b><br>{% endif %}
 	            {% if page.address1 %}{{ page.address1 }}<br>{% endif %}
 	            {% if page.address2 %}{{ page.address2 }}<br>{% endif %}
 	            {% if page.address3 %}{{ page.address3 }}<br>{% endif %}
 	            {% if page.address4 %}{{ page.address4 }}<br>{% endif %}
-	            {% if page.zipcode %}{{ page.zipcode }}&#160;{% endif %}
-	            {% if page.city %}{{ page.city }}<br>{% endif %}
-	            {% if page.region %}{{ page.region }}<br>{% endif %}<br>
+	            {% if page.city     %}{{ page.city     }}<br>{% endif %}
+	            {% if page.country  %}{{ page.country  }}<br>{% endif %}
 	        </p>
+	        <br/>
 	        {% if page.phone %}<p><i class="fa fa-phone"></i><abbr title="Phone"></abbr>&#160;{{ page.phone }}</p>{% endif %}
 	        {% if page.email %}<p><i class="fa fa-envelope-o"></i><abbr title="Email"></abbr>&#160;<a href="mailto:{{ page.email }}">{{ page.email }}</a></p>{% endif %}
 	        {% if page.web %}<p><i class="fa fa-home"></i><abbr title="Website"></abbr>&#160;<a href="{{ page.web }}">{{ page.web }}</a></p>{% endif %}
