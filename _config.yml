@@ -23,4 +23,5 @@ excerpt_separator: <!--more-->
 
 # Additional gems for sitemap generation
 gems:
-  - jekyll-sitemap  
+  - jekyll-sitemap
+  
