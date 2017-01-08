@@ -1,4 +1,4 @@
-
+# Copied from https://github.com/openhab/openhab-docs/blob/gh-pages/Vagrantfile
 $script = <<SCRIPT
 sudo apt-get update
 sudo apt-get install -y build-essential git nodejs python-software-properties
