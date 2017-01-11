@@ -86,7 +86,7 @@ We are also publishing the openHAB apps in the official stores. So far, we have 
             </div>
 </div>
 
-## Discussion Forum and myopenHAB
+## Discussion Forum and myopenHAB 
 
 Probably the most valuable service, which many users regularly use is [our discussion forum](https://community.openhab.org/). We are not only hosting the software and making sure it runs smoothly, but we also moderate discussions, answer questions and offer help.
 
@@ -119,6 +119,6 @@ Although it is all nicely documented, setting up an openHAB Cloud instance is no
             </div>
 </div>
  
-None of all this would be possible without our members. Starting off with [7 founding members](http://www.kaikreuzer.de/2016/05/21/openhab-foundation/), we have reached 40 by now. I am especially happy for the support of our [5 corporate members](http://www.openhabfoundation.org/members/memberlist.html), which each has a different background, like being a [smart home startup](/2016/home-ix), a [professional services provider](/2016/lewic), a [hardware manufacturer](/2016/pine64), an [IT consultancy company](/2016/qaware)  or an [Ambient Assisted Living (AAL) specialist](/2016/vss).
+None of all this would be possible without our members. Starting off with [7 founding members](http://www.kaikreuzer.de/2016/05/21/openhab-foundation/), we have reached 40 by now. I am especially happy for the support of our [5 corporate members](/members/memberlist.html), which each has a different background, like being a [smart home startup](/2016/home-ix), a [professional services provider](/2016/lewic), a [hardware manufacturer](/2016/pine64), an [IT consultancy company](/2016/qaware)  or an [Ambient Assisted Living (AAL) specialist](/2016/vss).
 
-If you like our ideals and the value that we bring to the community, please [consider becoming a member](http://www.openhabfoundation.org/members/membership.html) as well - we are ready to accept your application any time! I would like to specifically encourage all the people to join the foundation that have always wondered how they can give something back to the community while not being coders - this is now the opportunity for all of you! You can either decide to be a passive member and support us financially or to take an active role and help driving the foundation forward!
+If you like our ideals and the value that we bring to the community, please [consider becoming a member](/members/membership.html) as well - we are ready to accept your application any time! I would like to specifically encourage all the people to join the foundation that have always wondered how they can give something back to the community while not being coders - this is now the opportunity for all of you! You can either decide to be a passive member and support us financially or to take an active role and help driving the foundation forward!
