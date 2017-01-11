@@ -2,11 +2,6 @@
 layout: default
 
 ---
-{% if site.github.url %}
-  {% assign url_base = site.github.url %}
-{% else %}
-  {% assign url_base = site.url %}
-{% endif %}
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
     <div class="col-lg-12">
@@ -14,7 +9,7 @@ layout: default
             <small>about openHAB and more...</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="index.html">Home</a>
+            <li><a href="/">Home</a>
             </li>
             <li class="active">Blog</li>
         </ol>
@@ -31,7 +26,7 @@ layout: default
 		  {% if post.categories contains 'blog' %}
 		  
             <h2>
-                <a href="{{url_base}}/{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
             <p class="lead">
                 by <a href="{{url_base}}/index.php">{{ post.author }}</a>
@@ -43,7 +38,7 @@ layout: default
             </a>
             <hr>
             <p>{{ post.excerpt }}</p>
-            <a class="btn btn-primary" href="{{url_base}}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+            <a class="btn btn-primary" href="{{url_base}}{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
 
             <hr>
 
@@ -68,7 +63,7 @@ layout: default
         <div class="well">
             <h4>About our blog</h4>
             <p>This blog contains post from different openHAB Foundation members - any member is free to share knowledge, news and information about events etc. here.</p>
-            <p>Subscribe to our <a href="{{url_base}}/feed.xml">RSS feed</a></p>
+            <p>Subscribe to our <a href="/feed.xml">RSS feed</a></p>
         </div>
 
     </div>

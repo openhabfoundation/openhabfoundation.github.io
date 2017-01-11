@@ -1,9 +1,6 @@
 <head>
-    {% if site.github.url %}
-      {% assign url_base = site.github.url %}
-    {% else %}
-      {% assign url_base = / %}
-    {% endif %}
+    {% comment %}Use a different value if site structure changes {% endcomment %}
+    {% assign url_base = '' %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
