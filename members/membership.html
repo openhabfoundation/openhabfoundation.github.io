@@ -2,11 +2,6 @@
 layout: default
 
 ---
-{% if site.github.url %}
-  {% assign url_base = site.github.url %}
-{% else %}
-  {% assign url_base = site.url %}
-{% endif %}
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
 	<div class="col-lg-12">
@@ -14,7 +9,7 @@ layout: default
 			Membership <small>Joining Forces</small>
 		</h1>
 		<ol class="breadcrumb">
-			<li><a href="{{url_base}}/index.html">Home</a></li>
+			<li><a href="/">Home</a></li>
 			<li class="active">Membership</li>
 		</ol>
 	</div>
@@ -39,7 +34,7 @@ layout: default
 			
 		<br/>
 		<a class="btn btn-default btn-sm"
-			href="{{url_base}}/members/memberlist.html">See who supports us already!<span class="glyphicon"></span>
+			href="/members/memberlist">See who supports us already!<span class="glyphicon"></span>
 		</a>
     </div>
     <div class="col-md-6 col-sm-12">
@@ -60,7 +55,7 @@ layout: default
     </div>
     <div class="col-md-9 col-sm-12">
 		<p>When you become a member of the foundation, you are part of a passionate community, working together to shape the future for a better smart home world: Openness, neutrality, multi-vendor interoperability, full user control and flexibility, data privacy and open ecosystems — all built with Free software.</p>
-		<p>As a member, you do not only help financially to reach this goal, but you have also the possibility to take an active role in the foundation's endeavors and publish your own views and activities on the <a href="../blog/">foundation's blog</a>.</p>
+		<p>As a member, you do not only help financially to reach this goal, but you have also the possibility to take an active role in the foundation's endeavors and publish your own views and activities on the <a href="/blog/">foundation's blog</a>.</p>
 		<p>Join us on our journey to support and educate the world around us about the possibilities and benefits of free open smart home solutions and ecosystems.</p>
     </div>
 </div>   
@@ -82,7 +77,7 @@ layout: default
                 <p>For people who just want to show their appreciation.</p>
 	            <span class="price mb_price">2<sub>&euro;</sub></span>
 	            <span class="period mb_period">per month<sup>*)</sup></span>
-                <a href="{{url_base}}/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
+                <a href="/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
             </div>
         </div>
     </div>
@@ -96,7 +91,7 @@ layout: default
                 <p>For individuals who want to support financially or to actively engage themselves.</p>
 	            <span class="price mb_price">10<sub>&euro;</sub></span>
 	            <span class="period mb_period">per month<sup>*)</sup></span>
-                <a href="{{url_base}}/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
+                <a href="/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
             </div>
         </div>
     </div>
@@ -110,7 +105,7 @@ layout: default
                 <p>For companies and organisations that share our vision.</p>
 	            <span class="price mb_price">50<sub>&euro;</sub></span>
 	            <span class="period mb_period">per month<sup>*)</sup></span>
-                <a href="{{url_base}}/members/doc/Membership-Application-Form-LegalEntity.pdf" class="btn btn-primary">Join now!</a>
+                <a href="/members/doc/Membership-Application-Form-LegalEntity.pdf" class="btn btn-primary">Join now!</a>
             </div>
         </div>
     </div>
