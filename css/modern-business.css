@@ -96,6 +96,10 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+	 
+	 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #ccc;
+  }
 }
 
 /* START MEMBER PAGES */
