@@ -1,9 +1,17 @@
 <hr>
 <!-- Footer -->
 <footer>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>Copyright &copy; {{ site.time | date: '%Y' }}, {{ site.organization }}</p>
-        </div>
+   <div class="row">
+      <div class="col-md-6">
+        <p>Copyright &copy; {{ site.time | date: '%Y' }}, {{ site.organization }}</p>
+      </div>
+      <div class="col-md-6">
+         <nav role="navigation">
+            <ul class="list-inline pull-right">
+               <li><a href="/imprint">Imprint</a></li>
+               <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+         </nav>
+      </div>
     </div>
 </footer>
