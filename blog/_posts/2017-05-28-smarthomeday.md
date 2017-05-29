@@ -45,5 +45,5 @@ You can get some impressions of the event through the following links:
 Thanks to everyone who has attended. After all the positive feedback, I am sure that we will do a similar event next year again! 
 
 {:.center}
-<a href="https://photos.google.com/b/114354069804215189812/album/AF1QipNGiT766-qflrylov6_U4IK_0H1e-tr094jQXJ-"><img class="img-responsive" src="{{ base }}/images/posts/2017-05_googlephotos.jpg" alt=""></a>
+<a href="https://goo.gl/photos/XhUx25PiaNc2EMno6"><img class="img-responsive" src="{{ base }}/images/posts/2017-05_googlephotos.jpg" alt=""></a>
 <small>Pictures of the event are available on Google Photos</small>
