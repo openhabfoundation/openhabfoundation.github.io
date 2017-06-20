@@ -40,6 +40,7 @@ You can get some impressions of the event through the following links:
 - Slides about [the Future of Energy Supply]({{ base }}/documents/2017-05_Die_Zukunft_der_Energieversorgung.pdf)
 - Slides of the talk about [Energy & openHAB](https://speakerdeck.com/kaikreuzer/smart-home-day-2017-energy-and-openhab)
 - Slides on [Why Open Source Matters](https://speakerdeck.com/kaikreuzer/smart-home-day-2017-why-open-source-matters)
+- Slides of the [presentation from QAware]({{ base }}/documents/2017-05_QAware.pdf)
 - Slides of the [presentation from Musala Soft]({{ base }}/documents/2017-05_Musala_Soft.pdf)
 - Slides of the [presentation from Venture Services Seeheim]({{ base }}/documents/2017-05_vss.pdf)
 
