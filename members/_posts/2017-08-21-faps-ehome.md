@@ -15,8 +15,8 @@ email: jochen.bauer@faps.fau.de
 web: http://www.ehome-center.de
 twitter: 
 github:
-
 ---
+
 The E\|Home-Center develops and researches technologies for the intelligent, energy-efficient and resource-efficient housing in the private sector.
 
 <!--more-->
@@ -28,3 +28,5 @@ Research is focused on intelligent systems and devices that work autonomously an
 
 Against this backdrop, the E\|Home-Center understands its mission in the development, integration and training of innovative solutions in the fields of energy management, comfort and safety as well as infotainment in the domestic environment. 
 In cooperation with our partners, new products, solutions and services are being created.
+
+Work within the E|Home-Center is funded by the Free State of Bavaria and its State Ministry of Education, Science and the Arts. 
