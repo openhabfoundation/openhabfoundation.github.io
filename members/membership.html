@@ -2,11 +2,6 @@
 layout: default
 
 ---
-{% if site.github.url %}
-  {% assign url_base = site.github.url %}
-{% else %}
-  {% assign url_base = site.url %}
-{% endif %}
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
 	<div class="col-lg-12">
@@ -14,7 +9,7 @@ layout: default
 			Membership <small>Joining Forces</small>
 		</h1>
 		<ol class="breadcrumb">
-			<li><a href="{{url_base}}/index.html">Home</a></li>
+			<li><a href="/">Home</a></li>
 			<li class="active">Membership</li>
 		</ol>
 	</div>
@@ -30,19 +25,17 @@ layout: default
     </div>
     <div class="col-md-6 col-sm-12">
 
-		<p>The current smarthome market suffers under the commercial interests and competition of big companies, which are fighting for costumers and try to force their proprietary ecosystems. This leads to a highly fragmented market with vendor lock-ins, making participation and contribution of the public a true challenge with barriers.</p>
+		<p>The current smarthome market suffers under the commercial interests and competition of big companies, which are fighting for customers and trying to push their proprietary ecosystems. This leads to a highly fragmented market with vendor lock-ins, making interoperability and extensibility a big challenge.</p>
 		
-		<p>We highly believe that smart homes must not be closed or restricted, but that everybody must have the freedom to participate, modify and enhance it.</p>
+		<p>We believe that smart homes must not be closed or restricted, but that everyone should have the freedom to extend, modify and enhance it.</p>
 
-		<p>The openHAB Foundation e.V. was founded to boost innovation and to make smart home technology available for everybody by empowering individuals and organizations.</p>
-		<p>The Foundation is the central place for supporters which want to spread the word about openHAB and want to help becoming it a respected alternative to commercial solutions.</p>
+		<p>The openHAB Foundation e.V. was founded to boost innovation and to make open-source smart home technology easily available for everybody.</p>
+		<p>Our members support this idea and specifically believe that <a href="http://www.openhab.org/">openHAB</a> has the potential to be a leading open-source smart home solution that is worth to be supported to build a counterweight to proprietary and closed solutions.</p>
 			
 		<br/>
-		<!-- ENABLE LATER WHEN MEMBERS ARE IN MEMBERSLIST
 		<a class="btn btn-default btn-sm"
-			href="{{url_base}}/members/memberlist.html">See who is supporting us already!<span class="glyphicon"></span>
+			href="/members/memberlist">See who supports us already!<span class="glyphicon"></span>
 		</a>
-		 -->
     </div>
     <div class="col-md-6 col-sm-12">
         <img class="img-responsive" src="/images/network-1019842_web_480x300.jpg" alt="">
@@ -50,56 +43,19 @@ layout: default
 </div>   
 <!-- /.row -->
 
-<!-- Service List -->
-<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/
-<div class="row">
-    <div class="col-lg-12">
-        <h2 class="page-header">Organizations that join the openHAB Foundation e.V. can benefit in the following ways</h2>
-    </div>
-    <div class="col-md-6">
-        <div class="media">
-            <div class="pull-left">
-                <span class="fa-stack fa-2x">
-                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                      <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
-                </span>
-            </div>
-            <div class="media-body">
-                <h4 class="media-heading">Organization members logo</h4>
-                <p>As a member you exclusively can use the foundation member logo in your documents.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="media">
-            <div class="pull-left">
-                <span class="fa-stack fa-2x">
-                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                      <i class="fa fa-building fa-stack-1x fa-inverse"></i>
-                </span>
-            </div>
-            <div class="media-body">
-                <h4 class="media-heading">Organization member page</h4>
-                <p>You are able to present your organization on a member page with your logo and description of what you do and thus get visibility.</p>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- /.row -->
-
 <!-- Content Row -->
 <div class="row">
 
 	<!-- Membership Entries Column -->
     <div class="col-lg-12">
-        <h2 class="page-header">Become a Part and Join Us</h2>
+        <h2 class="page-header">Join Us!</h2>
     </div>
     <div class="col-md-3 col-sm-12">
         <img class="img-responsive" src="/images/matrix-1019905_267x200.jpg" alt="">
     </div>
     <div class="col-md-9 col-sm-12">
-		<p>When you become a member of the foundation, you are part of an informed, passionate community, working together to shape the future for a better smart home world: Openness, neutrality, multi-vendor interoperability, full user control and flexibility, data privacy and open ecosystems — all built on free software.</p>
-		<p>As a member, you do not only help through your donation to reach this goal, but you have also the possibility to make yourself heard on our Foundation's blog. And you can decide for yourself in which way you would like to actively contribute to the Foundation's mission!</p>
+		<p>When you become a member of the foundation, you are part of a passionate community, working together to shape the future for a better smart home world: Openness, neutrality, multi-vendor interoperability, full user control and flexibility, data privacy and open ecosystems — all built with Free software.</p>
+		<p>As a member, you do not only help financially to reach this goal, but you have also the possibility to take an active role in the foundation's endeavors and publish your own views and activities on the <a href="/blog/">foundation's blog</a>.</p>
 		<p>Join us on our journey to support and educate the world around us about the possibilities and benefits of free open smart home solutions and ecosystems.</p>
     </div>
 </div>   
@@ -118,10 +74,10 @@ layout: default
             </div>
             <div class="panel-heading">
                 <h4>Sustaining Member</h4>
-                <p>For people that want to donate, but not vote.</p>
+                <p>For people who just want to show their appreciation.</p>
 	            <span class="price mb_price">2<sub>&euro;</sub></span>
-	            <span class="period mb_period">per month</span>
-                <a href="{{url_base}}/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
+	            <span class="period mb_period">per month<sup>*)</sup></span>
+                <a href="/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
             </div>
         </div>
     </div>
@@ -131,11 +87,11 @@ layout: default
             	<img class="img-rounded mb_img" src="/images/puzzle-1020388_supporter_250px.jpg" alt="">
             </div>
             <div class="panel-heading">
-                <h4>Individual Member</h4>
-                <p>For everyone who wants to actively engage himself.</p>
+                <h4>Ordinary Member</h4>
+                <p>For individuals who want to support financially or to actively engage themselves.</p>
 	            <span class="price mb_price">10<sub>&euro;</sub></span>
-	            <span class="period mb_period">per month</span>
-                <a href="{{url_base}}/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
+	            <span class="period mb_period">per month<sup>*)</sup></span>
+                <a href="/members/doc/Membership-Application-Form-Individual.pdf" class="btn btn-primary">Join now!</a>
             </div>
         </div>
     </div>
@@ -146,178 +102,14 @@ layout: default
             </div>
             <div class="panel-heading">
                 <h4>Legal Entity</h4>
-                <p>For companies and organisations</p>
+                <p>For companies and organisations that share our vision.</p>
 	            <span class="price mb_price">50<sub>&euro;</sub></span>
-	            <span class="period mb_period">per month</span>
-                <a href="{{url_base}}/members/doc/Membership-Application-Form-LegalEntity.pdf" class="btn btn-primary">Join now!</a>
+	            <span class="period mb_period">per month<sup>*)</sup></span>
+                <a href="/members/doc/Membership-Application-Form-LegalEntity.pdf" class="btn btn-primary">Join now!</a>
             </div>
         </div>
     </div>
 </div>
 <!-- /.row -->
-
-
-
-<!-- compare Table -->
-<!-- <div class="row">
-    <div class="col-lg-12">
-        <h2 class="page-header">Become a member</h2>
-        <p>Admission fee once € 10.00 ...Todo...</p>
-    </div>
-
-	<div class="col-lg-12">
-		<table>
-			<thead>
-				<tr>
-					<th>&#160;</th>
-					<th>
-						<div class="col-xs-4 panel panel-default text-center mb_planHeader">
-			                <div class="panel-heading">
-				                <h4><i class="fa fa-fw fa-user"></i> Individual member</h4>
-					            <span class="price">2<sub>&euro;</sub></span>
-					            <span class="period mb_period">per month</span>
-				                <a href="#" class="btn btn-primary">Sign Up!</a>
-				            </div>
-			            </div>
-					</th>
-					<th>
-						<div class="col-xs-4 panel panel-default text-center mb_planHeader">
-			                <div class="panel-heading">
-				                <h4><i class="fa fa-fw fa-user"></i>/<i class="fa fa-fw fa-building"></i> Supporting member</h4>
-					            <span class="price">10<sub>&euro;</sub></span>
-					            <span class="period mb_period">per month</span>
-				                <a href="#" class="btn btn-primary">Sign Up!</a>
-				            </div>
-			            </div>
-					</th>
-					<th>
-						<div class="col-xs-4 panel panel-default text-center mb_planHeader">
-			                <div class="panel-heading">
-				                <h4><i class="fa fa-fw fa-building"></i> Organization member</h4>
-					            <span class="price">50<sub>&euro;</sub></span>
-					            <span class="period mb_period">per month</span>
-				                <a href="#" class="btn btn-primary">Sign Up!</a>
-				            </div>
-			            </div>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Foundation blog</strong>
-						<p>Any members are allowed to post there.</p>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Flow of information</strong>
-						<p>Right to be informed about incoming requests to the
-						foundation that ask for commercial services / projects to be
-						staffed.</p>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Member networking</strong>
-						<p>Todo: A central concerns of the Foundation is to make the communication 
-						and exchanges among members to encourage and promote.
-						</p><p>Networking opportunities with and for members and member 
-						organizations having B2B focus or building B2C service 
-						networks around openHAB.</p>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Organization member support</strong>
-						<p>Organizations showing support for the ideals of the foundation.</p>
-					</td>
-					<td class="mb_planValue">
-						&#160;
-					</td>
-					<td class="mb_planValue">
-						&#160;
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Organization member page</strong>
-						<p>You are able to present your organization on a member page with logo 
-						and some description of what they do and thus get some visibility.</p>
-					</td>
-					<td class="mb_planValue">
-						&#160;
-					</td>
-					<td class="mb_planValue">
-						&#160;
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Organization members logo</strong>
-						<p>The right to use the openHAB logo in their own material 
-						(only as a reference, not using it for their own products of course). 
-						As a member you exclusively use the foundation member logo in your documents.</p>
-					</td>
-					<td class="mb_planValue">
-						&#160;
-					</td>
-					<td class="mb_planValue">
-						&#160;
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-				<tr>
-					<td class="list-group-item mb_planFeature">
-			            <strong>Once more?</strong>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-					<td class="mb_planValue">
-						<i class="fa fa-check mb_check"></i>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>-->
-<!-- /.row -->
+<sup>*)</sup> plus a one-time admission fee of 10 EUR. Please see our <a href="fees">membership fees</a> for further details.<br/>
+Note: Membership fees are fully tax deductible for German residents as we are an officially recognized nonprofit association (gemeinnütziger Verein).    

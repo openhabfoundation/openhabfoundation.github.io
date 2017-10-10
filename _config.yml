@@ -3,7 +3,7 @@ title: openHAB Foundation
 email: info@openhabfoundation.org
 description: 
 baseurl: ""
-url: "http://openhabfoundation.org"
+url: "https://openhabfoundation.org"
 twitter_username: openhabfoundation
 github_username:  openhabfoundation
 
@@ -19,4 +19,9 @@ placeholderimagesbaseurl:
 
 # You can specify your own separator, of course. 
 # Use {{ m.excerpt }} in your .md Files in blog/_posts or members/_posts
-excerpt_separator: <!--more-->  
+excerpt_separator: <!--more--> 
+
+# Additional gems for sitemap generation
+gems:
+  - jekyll-sitemap
+  
