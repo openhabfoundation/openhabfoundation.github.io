@@ -33,7 +33,7 @@ layout: default
             </p>
             <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: "%B %-d, %Y" }} at 10:00 PM</p>
             <hr>
-            <a href="blog-post.html">
+            <a href="{{ post.url }}">
                 <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
             </a>
             <hr>
