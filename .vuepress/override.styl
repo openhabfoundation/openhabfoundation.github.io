@@ -2,7 +2,7 @@ $accentColor = #ff6600
 $MQMobile = 859px
 $MQNarrow = 1023px
 
-.navbar:not(.headroom--top):not(.transparent)
+.navbar
     box-shadow rgba(10%,10%,10%,25%) 0 0 10px
     background-color rgba(98%, 98%, 99%, 0.9) // linear-gradient(180deg,hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 95%,rgba(0,0,0,.05) 99%,rgba(0,0,0,.04))
     //opacity 0.9
@@ -121,3 +121,27 @@ img.illustration
     .features
         border-top none
         margin-top 0
+
+.custom-block.tip
+    border-color #2196f3 !important
+
+address
+    font-style normal
+
+@keyframes headerSlideDown
+  0%
+    transform translateY(-100%)
+  100%
+    transform translateY(0%)
+@keyframes headerSlideUp
+  0%
+    transform translateY(0%)
+  100%
+    transform translateY(-100%)
+
+header.headroom--pinned
+  animation 0.5s ease-out 0s 1 headerSlideDown
+  transform translateY(0%)
+header.headroom--unpinned
+  animation 0.5s ease-out 0s 1 headerSlideUp
+  transform translateY(-100%)

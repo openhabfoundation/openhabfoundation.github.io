@@ -6,7 +6,7 @@ title: Join
 image source: https://pixabay.com/en/members-group-people-team-business-42919/
 license: CC0
 -->
-<img class="illustration" src="./images/members-42919_1280.png" />
+<img class="illustration join-illustration-fadeIn" src="./images/members-42919_1280.png" />
 
 <h2 class="big-title">Become a Member</h2>
 
@@ -34,52 +34,11 @@ Join us on our journey to support and educate the world around us about the poss
 
 <h2 class="big-title">Membership Types</h2>
 
-<div class="home">
-<div class="features">
-<div class="feature">
-    <div class="panel panel-default text-center">
-        <div class="panel-body mb_panel-heading">
-            <img class="img-rounded mb_img" src="/images/puzzle-1019766_Individual_250px.jpg" alt="">
-        </div>
-        <div class="panel-heading">
-            <h4>Sustaining Member</h4>
-            <p>For people who just want to show their appreciation.</p>
-            <span class="price mb_price">2<sub>&euro;</sub></span>
-            <span class="period mb_period">per month<sup><a href="#fees">*</a></sup></span>
-            <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join Now!</a>
-        </div>
-    </div>
-</div>
-<div class="feature">
-    <div class="panel panel-default text-center">
-        <div class="panel-body mb_panel-heading">
-            <img class="img-rounded mb_img" src="/images/puzzle-1020388_supporter_250px.jpg" alt="">
-        </div>
-        <div class="panel-heading">
-            <h4>Ordinary Member</h4>
-            <p>For individuals who want to support financially or to actively engage themselves.</p>
-            <span class="price mb_price">10<sub>&euro;</sub></span>
-            <span class="period mb_period">per month<sup><a href="#fees">*</a></sup></span>
-            <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join Now!</a>
-        </div>
-    </div>
-</div>
-<div class="feature">
-    <div class="panel panel-default text-center">
-        <div class="panel-body mb_panel-heading">
-            <img class="img-rounded mb_img" src="/images/shops-1014037_business_250px.jpg" alt="">
-        </div>
-        <div class="panel-heading">
-            <h4>Legal Entity</h4>
-            <p>For companies and organisations that share our vision.</p>
-            <span class="price mb_price">50<sub>&euro;</sub></span>
-            <span class="period mb_period">per month<sup><a href="#fees">*</a></sup></span>
-            <a href="/forms/Membership-Application-Form-LegalEntity.pdf" class="join-us-button">Join Now!</a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
+<br />
+
+<MembershipTypes></MembershipTypes>
+
+<br />
 
 <sup id="fees">*</sup> _plus a one-time admission fee of 10 EUR_. Please see our membership fees for further details:
 
@@ -93,6 +52,20 @@ Membership fees are fully tax deductible for German residents as we are an offic
 :::
 
 <style lang="stylus">
+@keyframes joinFadeIn
+  0%
+    // transform translateY(10px)
+    opacity 0
+  70%
+    // transform translateY(10px)
+    opacity 0
+  100%
+    // transform translateY(0)
+    opacity 0.5
+
+img.join-illustration-fadeIn
+    animation 0.5s ease-out 0s 1 joinFadeIn
+
 .join-us-button
     margin 2rem
     display inline-block
@@ -101,6 +74,7 @@ Membership fees are fully tax deductible for German residents as we are an offic
     color #ff6600
     padding 0.8rem 1.6rem
     border-radius 4px
+    font-family 'Open Sans', sans-serif
     font-weight bold
     transition background-color .1s ease
     box-sizing border-box

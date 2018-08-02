@@ -5,11 +5,11 @@ export default ({
     siteData // site metadata
   }) => {
     if (typeof window !== 'undefined') {
-      // const Headroom = require('headroom.js')
-      // Vue.prototype.Headroom = Headroom
+      const Headroom = require('headroom.js')
+      Vue.prototype.Headroom = Headroom
 
-      // const ScrollReveal = require('scrollreveal')
-      // Vue.prototype.$sr = new ScrollReveal()
+      const ScrollReveal = require('scrollreveal')
+      Vue.prototype.$sr = new ScrollReveal()
 
       router.onReady(() => {
         if (typeof window.ga !== 'undefined') {

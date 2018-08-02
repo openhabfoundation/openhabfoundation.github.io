@@ -4,7 +4,12 @@ title: Organization Members
 
 <h2 class="big-title">Organization Members</h2>
 
-[Join the Foundation](/join/) and help us make a difference!
+<div style="text-align: center">
+    We are thankful to the following organizations for their support.
+    <router-link to="/join/">Join the Foundation</router-link>
+    and help us make a difference!
+</div>
+
 <br />
 <br />
 <hr />

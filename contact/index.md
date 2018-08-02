@@ -8,7 +8,7 @@ title: Contact the Foundation
 <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15036532.96553235!2d-0.7450918553625064!3d47.78690012964596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd65a7d0f39a43%3A0xfc38b36a4dc66ba3!2sKollwitzweg+10%2C+64372+Ober-Ramstadt%2C+Deutschland!5e0!3m2!1sde!2sde!4v1463828273182"></iframe>
 
 <address>
-<p>openHAB Foundation e.V.<br />Kollwitzweg 10<br />64372 Ober-Ramstadt<br />Germany</p>
+<p><strong>openHAB Foundation e.V.</strong><br />Kollwitzweg 10<br />64372 Ober-Ramstadt<br />Germany</p>
 </address>
 
 <!-- SVGs below from materialdesignicons.com

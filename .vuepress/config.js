@@ -26,6 +26,7 @@ module.exports = {
   themeConfig: {
     logo: `/logo.png`,
     editLinks: false,
+    search: false,
     nav: [
       {
         text: 'About',
@@ -36,13 +37,17 @@ module.exports = {
         link: '/contact/',
       },
       {
+        text: 'Members',
+        link: '/members/'
+      },
+      {
         text: 'Join',
         link: '/join/',
       },
       {
-        text: 'Members',
-        link: '/members/'
-      },
+        text: 'openHAB.org',
+        link: 'https://www.openhab.org/'
+      }
     ]
   }
 }

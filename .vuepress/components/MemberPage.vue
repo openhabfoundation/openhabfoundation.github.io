@@ -5,9 +5,9 @@
 
         <div class="content" style="min-height: 80vh">
             ← <router-link to="/members/">Members</router-link>
-            <h1 class="member-name">{{ $page.title }}</h1>
 
             <aside class="member-details">
+                <h1 class="member-name-mobile">{{ $page.title }}</h1>
                 <!-- Preview Image -->
                 <img v-if="$page.frontmatter.logo" class="member-logo" :src="'/logos/' + $page.frontmatter.logo" :alt="$page.frontmatter.name">
 
@@ -27,7 +27,10 @@
                         <li v-if="$page.frontmatter.github">GitHub: <a :href="'https://github.com/' + $page.frontmatter.github">{{ $page.frontmatter.github }}</a></li>
                     </ul>
                 </div>
+                <hr class="mobile-separator" />
             </aside>
+
+            <h1 class="member-name">{{ $page.title }}</h1>
 
             <Content></Content>
         </div>
@@ -37,14 +40,30 @@
 </template>
 
 <style lang="stylus">
-@media (min-width: 719px)
+@media (min-width: 720px)
     aside.member-details
         float right
-        margin-top -2rem
+        margin-top 3rem
         margin-left 4rem
         min-height 70vh
+        border-left 1px solid #ddd
+        padding-left 1rem
     .member-name
+        font-family 'Open Sans', sans-serif
         width calc(100% - 400px)
+    .member-name-mobile
+        display none
+    .mobile-separator
+        display none
+
+@media (max-width: 719px)
+    .member-details
+        padding-top 1rem
+    .member-name-mobile
+        font-family 'Open Sans', sans-serif
+        display inherit
+    .member-name
+        display none
 
 .member-logo
     width 240px

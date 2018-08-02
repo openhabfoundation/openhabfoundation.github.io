@@ -38,6 +38,18 @@ openHAB is a registered trademark of Kai Kreuzer in the EU, the US and other cou
 
 Rules for the re-use of the openHAB logo can be found [here](https://www.openhab.org/about/logos.html).
 
+### Icon Attribution
+
+Certain icons on this site's home page are made by these authors from [FlatIcon](https://www.flaticon.com):
+
+[DinosoftLabs](https://www.flaticon.com/authors/dinosoftlabs),
+[Freepik](https://www.flaticon.com/authors/freepik),
+[Icon Pond](https://www.flaticon.com/authors/popcorns-arts),
+[Nhor Phai](https://www.flaticon.com/authors/nhor-phai),
+[Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect),
+[Smashicons](https://www.flaticon.com/authors/smashicons),
+
+
 ### Liability for Contents
 
 As service providers, we are liable for own contents of these websites according to
