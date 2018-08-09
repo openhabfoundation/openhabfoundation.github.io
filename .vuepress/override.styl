@@ -4,7 +4,7 @@ $MQNarrow = 1023px
 
 .navbar
     box-shadow rgba(10%,10%,10%,25%) 0 0 10px
-    background-color rgba(98%, 98%, 99%, 0.9) // linear-gradient(180deg,hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 95%,rgba(0,0,0,.05) 99%,rgba(0,0,0,.04))
+    background-color rgba(98%, 98%, 99%, 0.9) !important // linear-gradient(180deg,hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 95%,rgba(0,0,0,.05) 99%,rgba(0,0,0,.04))
     //opacity 0.9
 
 .navbar
@@ -23,6 +23,17 @@ $MQNarrow = 1023px
 
     .site-name
         display none
+
+    .nav-links
+        .nav-item
+            &:last-child
+                border 1px solid #ccc
+                border-radius 5px
+                padding-left 4px
+                &:hover
+                    background #eee
+                a:hover
+                    border-bottom none
 
 // .nav-links
 //     .nav-item:last-child

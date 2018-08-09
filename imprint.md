@@ -40,7 +40,7 @@ Rules for the re-use of the openHAB logo can be found [here](https://www.openhab
 
 ### Icon Attribution
 
-Certain icons on this site's home page are made by these authors from [FlatIcon](https://www.flaticon.com):
+Certain icons on this site's home page are made by these authors from [Flaticon](https://www.flaticon.com):
 
 [DinosoftLabs](https://www.flaticon.com/authors/dinosoftlabs),
 [Freepik](https://www.flaticon.com/authors/freepik),
