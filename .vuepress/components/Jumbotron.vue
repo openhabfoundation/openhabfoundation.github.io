@@ -5,11 +5,9 @@
       <span>Welcome to the<img src="/logo-white.png" alt="openHAB" class="openhab-logo" />Foundation!</span>
     </h1>
 
-    <div class="content">
-      <img class="illustration illustration-fadeIn jumbotron-illustration" src="/images/smart-home-2769210_1920.jpg" alt="">
-
+    <div class="content jumbotron-center">
       <h2>We are a non-profit organisation with the mission to educate the public about the possibilities and benefits of free and open smart home solutions.</h2>
-  
+      <img class="illustration-fadeIn jumbotron-illustration" src="/images/smart-home-2769210_1920.jpg" alt="">
 
       <p>More and more new technologies and devices are introduced to our living, working and business environment. Although all of them are designed to make our lives easier, we believe they have a common problem: The lack of interoperability, due to incompatible technology stacks and conflicting commercial interests. Market consolidation and cooperation between all stakeholders therefore remains a difficult challenge.</p>
 
@@ -48,8 +46,9 @@
       padding-left 10px
       padding-right 10px
       margin-bottom -15px
+  .jumbotron-center
+    text-align center
   .jumbotron-illustration
-    float right
     transform none
     margin-bottom 8rem
   h2

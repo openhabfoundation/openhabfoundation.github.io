@@ -52,11 +52,14 @@
     .home
       .feature
         p
-          color #ddd
+          color #fff
         h2
           color #eee
         a
-          color white
+          color #cdece4
+          &:hover
+            color #ffffff
+            text-decoration underline
     .focus-icon-container
       position absolute
       z-index -100

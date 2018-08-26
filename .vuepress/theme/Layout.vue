@@ -17,11 +17,6 @@ export default {
     if (this.$sr) {
       const sr = this.$sr;
       sr.reveal(".slide-seq", { scale: 1.0, duration: 1000 }, 300)
-      sr.reveal(".slide-title", {
-        scale: 1.0,
-        direction: "up",
-        duration: 1500
-      })
       sr.reveal(".slide-illustration", {
         scale: 1.0,
         distance: 0,

@@ -13,12 +13,12 @@
       <ServicesForThePublic />
 
       <div class="content">
-        <h2 class="big-title">They Support Us</h2>
+        <h2 class="big-title">Our Supporters</h2>
 
         <OurMembers />
 
         <div style="text-align: center">
-          <router-link class="link-button" to="/members/">Our Members ➜</router-link>
+          <router-link class="link-button" to="/members/">Learn More About Them ➜</router-link>
         </div>
       </div>
 
