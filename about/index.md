@@ -1,7 +1,7 @@
 <h2 class="big-title">About the openHAB Foundation e.V.</h2>
 
 <!-- CC0 image from pixabay.com -->
-<img class="illustration" src="/images/about_illustration.jpg" alt="">
+<img class="illustration wide" src="/images/about_illustration.jpg" alt="">
 
 The openHAB Foundation e.V. is a registered non-profit organisation.
 Its purpose is to educate the public about the possibilities that [Free software](https://en.wikipedia.org/wiki/Free_software) offers in the domain of smart homes.
