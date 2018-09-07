@@ -6,9 +6,11 @@
     </h1>
 
     <div style="min-height: 468px">
-      <Parallax>
-        <img src="/images/home/library.jpg" class="illustration-fadeIn" />
-      </Parallax>
+      <ClientOnly>
+        <Parallax>
+          <img src="/images/home/library.jpg" class="illustration-fadeIn" />
+        </Parallax>
+      </ClientOnly>
     </div>
     <div class="content jumbotron-center">
 
