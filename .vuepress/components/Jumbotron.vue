@@ -5,9 +5,16 @@
       <span>Welcome to the<img src="/logo-white.png" alt="openHAB" class="openhab-logo" />Foundation!</span>
     </h1>
 
+    <div style="min-height: 468px">
+      <Parallax>
+        <img src="/images/home/library.jpg" class="illustration-fadeIn" />
+      </Parallax>
+    </div>
     <div class="content jumbotron-center">
+
       <h2>We are a non-profit organisation with the mission to educate the public about the possibilities and benefits of free and open smart home solutions.</h2>
-      <img class="illustration-fadeIn jumbotron-illustration" src="/images/smart-home-2769210_1920.jpg" alt="">
+
+      <!-- <img class="illustration-fadeIn jumbotron-illustration" src="/images/smart-home-2769210_1920.jpg" alt=""> -->
 
       <p>More and more new technologies and devices are introduced to our living, working and business environment. Although all of them are designed to make our lives easier, we believe they have a common problem: The lack of interoperability, due to incompatible technology stacks and conflicting commercial interests. Market consolidation and cooperation between all stakeholders therefore remains a difficult challenge.</p>
 
@@ -31,8 +38,8 @@
   .jumbotron-title
     background #aaa
     font-weight 400
-    margin-top -4rem
-    padding-top 14rem
+    margin-top -1rem
+    padding-top 8rem
     padding-bottom 2rem
     background linear-gradient(#ff660030, #ff6600ff)
     color white
@@ -40,6 +47,7 @@
     font-family 'Open Sans', sans-serif
     font-size 28pt
     line-height 2
+    box-shadow 0px 10px 60px 0px rgba(0,0,0,0.75);
     // span
     //   border-bottom 4px solid #ff6600
     .openhab-logo
@@ -55,16 +63,27 @@
     font-family 'Open Sans', sans-serif
     font-weight 300
     border 0
+  .Masthead
+      margin-top -1.5rem
+  @media screen and (min-width: 768px)
+    .Masthead
+      height: 468px !important
+      min-height: 468px !important
 </style>
 
 <script>
+import Parallax from 'vue-parallaxy'
+
 export default {
+  components: {
+    Parallax
+  },
   mounted () {
     if (this.$sr) {
       const sr = this.$sr
       sr.reveal('.slide-title span', { scale: 1.0, direction: 'up', duration: 1500 })
       sr.reveal('.jumbotron h2', { scale: 1.0, direction: 'up', duration: 1500 })
-      sr.reveal('.jumbotron p', { scale: 1.0, direction: 'up', duration: 2000 }, 300)
+      sr.reveal('.jumbotron p', { scale: 1.0, direction: 'up', duration: 500 }, 300)
     }
   }
 }
