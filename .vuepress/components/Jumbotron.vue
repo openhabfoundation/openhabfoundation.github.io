@@ -49,7 +49,7 @@
     font-family 'Open Sans', sans-serif
     font-size 28pt
     line-height 2
-    box-shadow 0px 10px 60px 0px rgba(0,0,0,0.75);
+    //box-shadow 0px 10px 60px 0px rgba(0,0,0,0.75);
     // span
     //   border-bottom 4px solid #ff6600
     .openhab-logo
