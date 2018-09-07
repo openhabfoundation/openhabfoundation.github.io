@@ -1,19 +1,8 @@
 ---
-layout: default
 title: Imprint
 ---
-<!-- Page Heading/Breadcrumbs -->
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Imprint
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="index.html">Home</a>
-            </li>
-            <li class="active">Imprint</li>
-        </ol>
-    </div>
-</div>
+
+# Imprint
 
 ### This Site is operated by
 
@@ -48,6 +37,18 @@ regarding the use of our website and the mobile reference applications.
 openHAB is a registered trademark of Kai Kreuzer in the EU, the US and other countries.
 
 Rules for the re-use of the openHAB logo can be found [here](https://www.openhab.org/about/logos.html).
+
+### Icon Attribution
+
+Certain icons on this site's home page are made by these authors from [Flaticon](https://www.flaticon.com):
+
+[DinosoftLabs](https://www.flaticon.com/authors/dinosoftlabs),
+[Freepik](https://www.flaticon.com/authors/freepik),
+[Icon Pond](https://www.flaticon.com/authors/popcorns-arts),
+[Nhor Phai](https://www.flaticon.com/authors/nhor-phai),
+[Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect),
+[Smashicons](https://www.flaticon.com/authors/smashicons),
+
 
 ### Liability for Contents
 
