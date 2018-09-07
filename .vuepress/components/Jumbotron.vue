@@ -40,7 +40,7 @@
   .jumbotron-title
     background #aaa
     font-weight 400
-    margin-top -1rem
+    margin-top -0rem
     padding-top 8rem
     padding-bottom 2rem
     background linear-gradient(#ff660030, #ff6600ff)
