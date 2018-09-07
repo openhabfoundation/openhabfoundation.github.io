@@ -5,7 +5,7 @@
       <span>Welcome to the<img src="/logo-white.png" alt="openHAB" class="openhab-logo" />Foundation!</span>
     </h1>
 
-    <div style="min-height: 468px">
+    <div style="min-height: 320px">
       <ClientOnly>
         <Parallax>
           <img src="/images/home/library.jpg" class="illustration-fadeIn" />
@@ -67,10 +67,8 @@
     border 0
   .Masthead
       margin-top -1.5rem
-  @media screen and (min-width: 768px)
-    .Masthead
-      height: 468px !important
-      min-height: 468px !important
+      height: 320px !important
+      min-height: 320px !important
 </style>
 
 <script>
