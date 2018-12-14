@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron">
-    <div style="min-height: 480px">
+    <div style="min-height: 320px">
       <div class="jumbotron-filter">
         <div class="jumbotron-pattern"></div>
       </div>
@@ -38,14 +38,14 @@
     opacity 1
 
 .jumbotron
-  min-height 480px
+  min-height 320px
   .jumbotron-filter
     position absolute
     left 0
     right 0
     top 4rem
-    height 480px
-    background linear-gradient(#ff6600ff, #ff660050)
+    height 320px
+    background linear-gradient(#ff6600ff, #ff660000)
 
   .jumbotron-pattern
     position absolute
@@ -53,7 +53,7 @@
     right 0
     bottom 0
     top 0
-    opacity 0.3
+    opacity 0.2
     background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQYV2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBARYEptoAAAAAElFTkSuQmCC')
     //z-index -100
   .jumbotron-title
@@ -86,10 +86,10 @@
     font-weight 300
     border 0
   .Masthead
-      height 480px !important
-      min-height 480px !important
-      img
-        filter grayscale()
+      height 320px !important
+      min-height 320px !important
+      // img
+      //   filter grayscale()
 </style>
 
 <script>
