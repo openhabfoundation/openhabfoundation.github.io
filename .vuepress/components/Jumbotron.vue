@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron">
-    <div>
+    <div style="min-height: 480px">
       <h1 class="welcome jumbotron-title">
         <span>Welcome to the<img src="/logo-white.png" alt="openHAB" class="openhab-logo" />Foundation!</span>
       </h1>
