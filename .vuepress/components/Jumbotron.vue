@@ -90,8 +90,8 @@ export default {
     if (this.$sr) {
       const sr = this.$sr
       sr.reveal('.slide-title span', { scale: 1.0, direction: 'up', duration: 1500 })
-      sr.reveal('.jumbotron h2', { scale: 1.0, direction: 'up', duration: 1500 })
-      sr.reveal('.jumbotron p', { scale: 1.0, direction: 'up', duration: 500 }, 300)
+      sr.reveal('.jumbotron h2', { scale: 1.0, direction: 'up', duration: 500, delay: 800 })
+      sr.reveal('.jumbotron p', { scale: 1.0, direction: 'up', duration: 500, delay: 1000 }, 300)
     }
   }
 }
