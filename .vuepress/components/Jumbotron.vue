@@ -9,7 +9,7 @@
       </h1>
       <ClientOnly>
         <Parallax>
-          <img src="/images/home/jumbotron.jpg" />
+          <img src="/images/home/library.jpg" />
         </Parallax>
       </ClientOnly>
     </div>
@@ -68,7 +68,7 @@
     font-family 'Open Sans', sans-serif
     font-size 31pt
     line-height 2
-    text-shadow 0 0 10px #333
+    text-shadow 0 0 15px #333
     user-select none
     animation 1.5s ease-out 0s 1 slideIn2
     .openhab-logo
