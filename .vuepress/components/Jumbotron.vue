@@ -1,6 +1,9 @@
 <template>
   <div class="jumbotron">
     <div style="min-height: 480px">
+      <div class="jumbotron-filter">
+        <div class="jumbotron-pattern"></div>
+      </div>
       <h1 class="welcome jumbotron-title">
         <span>Welcome to the<img src="/logo-white.png" alt="openHAB" class="openhab-logo" />Foundation!</span>
       </h1>
@@ -36,15 +39,23 @@
 
 .jumbotron
   min-height 480px
+  .jumbotron-filter
+    position absolute
+    left 0
+    right 0
+    top 4rem
+    height 480px
+    background linear-gradient(#ff6600ff, #ff660050)
+
   .jumbotron-pattern
     position absolute
     left 0
     right 0
     bottom 0
     top 0
-    //opacity 0.2
+    opacity 0.3
     background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQYV2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBARYEptoAAAAAElFTkSuQmCC')
-    z-index -100
+    //z-index -100
   .jumbotron-title
     margin-top 0
     font-weight 400
@@ -64,7 +75,7 @@
       padding-left 10px
       padding-right 10px
       margin-bottom -15px
-      filter drop-shadow(0 0 10px #000)
+      filter drop-shadow(0 0 10px #333)
   .jumbotron-center
     text-align center
   .jumbotron-illustration
@@ -77,6 +88,8 @@
   .Masthead
       height 480px !important
       min-height 480px !important
+      img
+        filter grayscale()
 </style>
 
 <script>
