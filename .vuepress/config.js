@@ -16,12 +16,12 @@ module.exports = {
     ['meta', { property: 'og:description', content: 'The openHAB Foundation e.V. is a nonprofit organisation with the mission to educate the public about the possibilities and benefits of free and open smart home solutions.' }],
     // ['script', { src: `https://identity.netlify.com/v1/netlify-identity-widget.js` }]
   ],
-  // configureWebpack: (config, isServer) => {
-  //   config.plugins.push(new CopyWebpackPlugin([
-  //     { from: '.vuepress/_redirects', to: '.'},
-  //     { from: '.vuepress/_headers', to: '.'},
-  //   ]))
-  // },
+  configureWebpack: (config, isServer) => {
+    config.plugins.push(new CopyWebpackPlugin([
+      { from: '.vuepress/_redirects', to: '.'},
+      // { from: '.vuepress/_headers', to: '.'},
+    ]))
+  },
   serviceWorker: false,
   themeConfig: {
     logo: `/logo.png`,
