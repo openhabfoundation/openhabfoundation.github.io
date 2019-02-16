@@ -1,3 +1,5 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 module.exports = {
   title: 'openHAB Foundation',
   description: 'The openHAB Foundation e.V. is a nonprofit organisation with the mission to educate the public about the possibilities and benefits of free and open smart home solutions.',
