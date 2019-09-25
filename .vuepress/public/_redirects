@@ -1,0 +1,4 @@
+# Netlify redirects
+# https://www.netlify.com/docs/redirects/#basic-redirects
+
+/constitution /legal/Vereinssatzung_2017-05-20.pdf
