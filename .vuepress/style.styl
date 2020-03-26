@@ -140,21 +140,3 @@ img.illustration
 
 address
     font-style normal
-
-@keyframes headerSlideDown
-  0%
-    transform translateY(-100%)
-  100%
-    transform translateY(0%)
-@keyframes headerSlideUp
-  0%
-    transform translateY(0%)
-  100%
-    transform translateY(-100%)
-
-header.headroom--pinned
-  animation 0.5s ease-out 0s 1 headerSlideDown
-  transform translateY(0%)
-header.headroom--unpinned
-  animation 0.5s ease-out 0s 1 headerSlideUp
-  transform translateY(-100%)
