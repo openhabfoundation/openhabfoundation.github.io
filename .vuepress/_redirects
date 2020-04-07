@@ -1,0 +1,5 @@
+# Netlify redirects (https://www.netlify.com/docs/redirects/) for old links
+# in the PDF application form
+
+/members/fees/  /join/
+/constitution/  /about/
