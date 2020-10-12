@@ -263,10 +263,14 @@ Further information about handling user data on myopenHAB, can be found in the d
 
 The Android app does not need any special rights on your Android phone or tablet.
 
-In case of errors Firebase Crash Reporting is used to provide the developers with
-information about the problem. These information helps to solve problems and
-improve the app and our services.
-Firebase Crash Reporting is a service provided by Google Inc. Further information about handling user data can be found at <https://firebase.google.com/docs/crash>.
+In case of errors, Firebase Crashlytics is used to provide the developers with information about the problem. This information helps to solve problems and improve the app and our services.
+Firebase Crashlytics is a service provided by Google Inc. In case of malfunction or failure, the following information is transmitted to Firebase Crashlytics:
+
+- Crashlytics Installation UUIDs
+- Crash traces
+- Breakpad minidump formatted data
+
+Further information about handling user data can be found at <https://firebase.google.com/support/privacy>.
 
 The app uses Firebase Cloud Messaging to send messages from your openHAB Server and the cloud service to your Android device. Firebase Cloud Messaging is a service provided by Google Inc. Further information this service can be found at <https://firebase.google.com/docs/cloud-messaging/>.
 
@@ -274,12 +278,18 @@ If your openHAB sitemap contains a map view the Android app connects to [Google 
 
 ### Apple iOS App
 
-The IOS app does not need any special rights on your iOS device.
+The iOS app does not need any special rights on your iOS device.
 
-In case of errors, Firebase Crash Reporting is used to provide the developers with information about the problem. This information helps to solve problems and improve the app and our services.
-Firebase Crash Reporting is a service provided by Google Inc. Further information about handling user data can be found at <https://firebase.google.com/docs/crash>.
+In case of errors, Firebase Crashlytics is used to provide the developers with information about the problem. This information helps to solve problems and improve the app and our services.
+Firebase Crashlytics is a service provided by Google Inc. In case of malfunction or failure, the following information is transmitted to Firebase Crashlytics:
 
-The app uses the Apple push notification service (APNS) to send messages from your openHAB Server and the cloud service to your iOS device. APNS a service provided by Apple Inc. 1 Infinite Loop, Cupertino, California, USA, 95014. You can find more information about APNS at <https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html>.
+- Crashlytics Installation UUIDs
+- Crash traces
+- Breakpad minidump formatted data
+
+Further information about handling user data can be found at <https://firebase.google.com/support/privacy>. The transfer of information about crashes and malfunctions to the Firebase Crashlytics service is disabled by default and can be changed in the Application settings.
+
+The app uses the Apple push notification service (APNS) to send messages from your openHAB Server and the cloud service to your iOS device. APNS is a service provided by Apple Inc. 1 Infinite Loop, Cupertino, California, USA, 95014. You can find more information about APNS at <https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html>.
 
 ### Microsoft Windows App
 
