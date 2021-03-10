@@ -91,7 +91,7 @@ Please see our [Privacy Policy](/privacy.html) regarding the use of our website 
 <style lang="stylus">
 @media (min-width 860px)
     .board .feature
-        max-width 25%
+        max-width 33%
     .board .caption p
         max-width 80%
 .board-social-icon
