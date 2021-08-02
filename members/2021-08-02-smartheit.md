@@ -1,7 +1,7 @@
 ---
 layout: MemberPage
 category: cmember
-logo : smartheit_logo.png
+logo : smartheit.png
 
 title: 'smartheit GmbH'
 address1: 'Kappelen 11'
@@ -16,7 +16,7 @@ web: https://smartheit.com
 github: 
 
 ---
-smartheit offers profesional KNX programming services and uses openHAB for advanced Smart Home projects.
+smartheit offers professional KNX programming services and uses openHAB for advanced Smart Home projects.
 
 <!-- more -->
 
@@ -24,4 +24,3 @@ The philosophy of smartheit is to provide vendor neutral Smart Home technologies
 We also believe that data recorded by a smart house belongs to the customer and only to the customer.
 To achieve these goals only a vendor neutral and open Smart Home framework can be used.
 This is why we chose openHAB.
-
