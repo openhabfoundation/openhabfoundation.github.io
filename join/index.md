@@ -42,8 +42,8 @@ Join us on our journey to support and educate the world around us about the poss
 
 <sup id="fees">*</sup> _plus a one-time admission fee of 10 EUR_. Please see our membership fees for further details:
 
-- [Beitragsordnung (German)](/legal/Beitragsordnung_2016-05-20.pdf) - the legally binding document
-- [Membership Fees (English)](/legal/MembershipFees_2016-05-20.pdf) - for information only
+- [Beitragsordnung (German)](/legal/Beitragsordnung_2021-10-02.pdf) - the legally binding document
+- [Membership Fees (English)](/legal/MembershipFees_2021-10-02.pdf) - for information only
 
 ::: tip NOTE
 
