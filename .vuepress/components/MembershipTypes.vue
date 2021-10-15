@@ -9,7 +9,7 @@
           <div class="panel-heading">
             <h4>Sustaining Member</h4>
             <p>For people who just want to show their appreciation.</p>
-            <span class="price mb_price">2<sub>&euro;</sub></span>
+            <span class="price mb_price">1<sub>&euro;</sub></span>
             <span class="period mb_period">per month<sup><a href="#fees">*</a></sup></span>
             <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join Now!</a>
           </div>
@@ -23,7 +23,7 @@
           <div class="panel-heading">
             <h4>Ordinary Member</h4>
             <p>For individuals who want to support financially or to actively engage themselves.</p>
-            <span class="price mb_price">10<sub>&euro;</sub></span>
+            <span class="price mb_price">5<sub>&euro;</sub></span>
             <span class="period mb_period">per month<sup><a href="#fees">*</a></sup></span>
             <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join Now!</a>
           </div>
@@ -37,7 +37,7 @@
           <div class="panel-heading">
             <h4>Legal Entity</h4>
             <p>For companies and organisations that share our vision.</p>
-            <span class="price mb_price">50<sub>&euro;</sub></span>
+            <span class="price mb_price">25<sub>&euro;</sub></span>
             <span class="period mb_period">per month<sup><a href="#fees">*</a></sup></span>
             <a href="/forms/Membership-Application-Form-LegalEntity.pdf" class="join-us-button">Join Now!</a>
           </div>
