@@ -11,7 +11,7 @@ We specifically focus our activities on the [openHAB project](http://www.openhab
 See here for our legal documents (only the German version is legally binding):
 
 - [Vereinssatzung](/legal/Vereinssatzung_2017-05-20.pdf) / [Constitution](/legal/Constitution_2017-05-20.pdf)
-- [Beitragsordnung](/legal/Beitragsordnung_2017-05-20.pdf) / [Membership Fees](/legal/MembershipFees_2017-05-20.pdf)
+- [Beitragsordnung](/legal/Beitragsordnung_2021-10-02.pdf) / [Membership Fees](/legal/MembershipFees_2021-10-02.pdf)
 - [Versammlungsordnung](/legal/Versammlungsordnung_2016-05-20.pdf) / [Assembly Procedure](/legal/AssemblyProcedure_2016-05-20.pdf)
 
 Please see our [Privacy Policy](/privacy.html) regarding the use of our website and the mobile reference applications.
