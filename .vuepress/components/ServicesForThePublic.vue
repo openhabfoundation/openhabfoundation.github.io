@@ -28,7 +28,7 @@
               <img class="service-icon" src="./icons/005-book.svg" />
             </div>
             <h4 class="service-heading">Reference Documentation</h4>
-            <p>As documentation is often scarse, we help on providing a detailed <a href="https://www.openhab.org/docs/" target="_blank">user reference</a>.</p>
+            <p>As documentation is often scarce, we help on providing a detailed <a href="https://www.openhab.org/docs/" target="_blank">user reference</a>.</p>
           </div>
         </div>
         <div class="service">
