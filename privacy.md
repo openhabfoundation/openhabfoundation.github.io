@@ -261,7 +261,11 @@ Further information about handling user data on myopenHAB, can be found in the d
 
 ### Android App
 
-The Android app does not need any special rights on your Android phone or tablet.
+[The Android app](https://play.google.com/store/apps/details?id=org.openhab.habdroid) does not need any special rights on your Android phone or tablet.
+
+For the following features it is required to read the current Wi-Fi SSID. On Android the location permission is required to do so.
+- Send the Wi-Fi SSID to your openHAB server. This is also done when the app is in background and therefore the app requires the location in background permission.
+- When having multiple servers the server can be auto-selected based on the current Wi-Fi.
 
 In case of errors, Firebase Crashlytics is used to provide the developers with information about the problem. This information helps to solve problems and improve the app and our services.
 Firebase Crashlytics is a service provided by Google Inc. In case of malfunction or failure, the following information is transmitted to Firebase Crashlytics:
