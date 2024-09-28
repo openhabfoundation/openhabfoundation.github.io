@@ -276,13 +276,15 @@ Firebase Crashlytics is a service provided by Google Inc. In case of malfunction
 
 Further information about handling user data can be found at <https://firebase.google.com/support/privacy>.
 
-The app uses Firebase Cloud Messaging to send messages from your openHAB Server and the cloud service to your Android device. Firebase Cloud Messaging is a service provided by Google Inc. Further information this service can be found at <https://firebase.google.com/docs/cloud-messaging/>.
+The app uses Firebase Cloud Messaging to send messages from your openHAB Server and the cloud service to your Android device.
+Firebase Cloud Messaging is a service provided by Google Inc.
+Further information about this service can be found at <https://firebase.google.com/docs/cloud-messaging/>.
 
-If your openHAB sitemap contains a map view the Android app connects to [Google Maps](#google-maps).
+If your openHAB Sitemap contains a map view the Android app connects to [Google Maps](#google-maps).
 
 ### Apple iOS App
 
-The iOS app does not need any special rights on your iOS device.
+[The iOS app](https://apps.apple.com/de/app/openhab-v2/id6505005945) does not need any special rights on your iOS device, except microphone access if requested by Main UI (e.g. by the SIP client widget).
 
 In case of errors, Firebase Crashlytics is used to provide the developers with information about the problem. This information helps to solve problems and improve the app and our services.
 Firebase Crashlytics is a service provided by Google Inc. In case of malfunction or failure, the following information is transmitted to Firebase Crashlytics:
@@ -291,9 +293,14 @@ Firebase Crashlytics is a service provided by Google Inc. In case of malfunction
 - Crash traces
 - Breakpad minidump formatted data
 
-Further information about handling user data can be found at <https://firebase.google.com/support/privacy>. The transfer of information about crashes and malfunctions to the Firebase Crashlytics service is disabled by default and can be changed in the Application settings.
+Further information about handling user data can be found at <https://firebase.google.com/support/privacy>. The transfer of information about crashes and malfunctions to the Firebase Crashlytics service is disabled by default and can be enabled in the application settings.
 
-The app uses the Apple push notification service (APNS) to send messages from your openHAB Server and the cloud service to your iOS device. APNS is a service provided by Apple Inc. 1 Infinite Loop, Cupertino, California, USA, 95014. You can find more information about APNS at <https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html>.
+The app uses Firebase Cloud Messaging to send messages from your openHAB Server and the cloud service to your iOS device.
+Firebase Cloud Messaging is a service provided by Google Inc.
+Further information about this service can be found at <https://firebase.google.com/docs/cloud-messaging/>.
+
+If your openHAB Sitemap contains a map view the iOS app uses [Apple MapKit](https://developer.apple.com/documentation/mapkit/).
+Further information about MapKit‘s privacy policy can be found at <https://www.apple.com/legal/privacy/data/en/apple-maps/> and <https://www.apple.com/legal/privacy/en-ww/governance/>.
 
 ### Microsoft Windows App
 
