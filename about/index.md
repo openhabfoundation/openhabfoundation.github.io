@@ -49,7 +49,7 @@ Please see our [Privacy Policy](/privacy.html) regarding the use of our website 
     </BoardMember>
 </div>
 
-<h3>Former Board Members</h2>
+<h3>Former Board Members</h3>
 
 <div class="home board">
     <BoardMember name="Yannick Schaus" role="Alumni" imgSrc="/images/yannick.jpg" text="Yannick has been behind most of the openHAB UIs and other initiatives for close to a decade, from 2016 to 2025. He is based in France and Luxembourg.">
