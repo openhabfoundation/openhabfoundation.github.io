@@ -252,6 +252,7 @@ openHAB provides apps for the following platforms:
 - Apple iOS
 - Microsoft Windows
 - Pebble
+- Sailfish OS
 
 You can use these apps to remotely control your openHAB server. For this purpose, the apps can use the openHAB Cloud Service (myopenHAB). myopenHAB is a service provided by the openHAB Foundation e.V..
 
@@ -309,3 +310,8 @@ The Microsoft Windows app does not need any special rights and does not send any
 ### Pebble App
 
 The Pebble App does not send any additional data to the myopenHAB cloud service.
+
+### Sailfish OS App
+
+The Sailfish OS App does not send any additional data to the myopenHAB cloud service or other services.
+
