@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress';
+
 defineProps<{
   name: string;
   role: string;
@@ -9,7 +11,7 @@ defineProps<{
 
 <template>
   <div class="board-member">
-    <img class="img-responsive" :src="imgSrc" alt="">
+    <img class="img-responsive" :src="withBase(imgSrc)" alt="">
     <div class="caption">
       <h3>{{ name }}<br>
         <small>{{ role }}</small>
