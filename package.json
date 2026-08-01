@@ -1,24 +1,26 @@
 {
-  "name": "openhab-website",
+  "name": "openhabfoundation-website",
   "version": "1.0.0",
-  "description": "openHAB Website",
-  "dependencies": {
-    "headroom.js": "^0.9.4",
-    "markdown-it": "^12.3.2",
-    "scrollreveal": "^3.4.0",
-    "vue-parallax": "^1.1.1",
-    "vue-parallaxy": "^1.1.1",
-    "vue-tweet-embed": "^2.1.1"
-  },
-  "devDependencies": {
-    "copy-webpack-plugin": "^4.5.1",
-    "fs-extra": "^6.0.1",
-    "vuepress": "^0.14.11"
-  },
+  "description": "openHAB Foundation Website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vuepress build ."
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
-  "author": "openHAB",
-  "license": "EPL-1.0"
+  "keywords": [
+    "openHAB"
+  ],
+  "author": "openHAB Foundation e.V.",
+  "license": "EPL-1.0",
+  "packageManager": "pnpm@10.8.1",
+  "devDependencies": {
+    "stylus": "^0.64.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.40"
+  },
+  "dependencies": {
+    "@lucien144/vue3-parallaxy": "^0.1.2",
+    "scrollreveal": "^4.0.9"
+  }
 }

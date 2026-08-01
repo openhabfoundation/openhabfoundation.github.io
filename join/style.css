@@ -1,0 +1,18 @@
+.join-illustration {
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.join-us-button {
+    margin: 2rem;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--border-radius-md);
+    transition: background-color .1s ease;
+    border: 2px solid #ff6600;
+    &:hover {
+        background-color: #ff6600;
+        color: white !important;
+        text-decoration: none !important;
+    }
+}

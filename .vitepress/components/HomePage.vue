@@ -4,7 +4,7 @@
 
     <div class="content">
       <div style="text-align: center">
-        <router-link class="link-button big" to="/join/">Join Us Today ➜</router-link>
+        <a class="link-button big" href="/join">Join Us Today ➜</a>
       </div>
     </div>
 
@@ -18,16 +18,24 @@
         <OurMembers />
 
         <div style="text-align: center">
-          <router-link class="link-button" to="/members/">Learn More About Them ➜</router-link>
+          <a class="link-button" href="/members">Learn More About Them ➜</a>
         </div>
       </div>
 
-      <Footer />            
+      <Footer />
     </div>
 
   </div>
 
 </template>
+
+<script setup lang="ts">
+import Jumbotron from './Jumbotron.vue'
+import OurFocus from './OurFocus.vue'
+import ServicesForThePublic from './ServicesForThePublic.vue'
+import OurMembers from './OurMembers.vue'
+import Footer from './Footer.vue'
+</script>
 
 <style lang="stylus">
 @keyframes fadeIn {

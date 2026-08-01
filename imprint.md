@@ -1,5 +1,6 @@
 ---
 title: Imprint
+pageClass: legalPage
 ---
 
 # Imprint

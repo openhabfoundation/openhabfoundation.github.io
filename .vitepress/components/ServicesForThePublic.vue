@@ -37,7 +37,7 @@
               <img class="service-icon" src="./icons/003-cloud.svg" />
             </div>
             <h4 class="service-heading">Online Demo</h4>
-            <p>We are operating an <a href="https://demo.openhab.org:8443/" target="_blank">openHAB demo server</a>, which gives an easy first impression of it.</p>
+            <p>We are operating an <a href="https://demo.openhab.org/" target="_blank">openHAB demo server</a>, which gives an easy first impression of it.</p>
           </div>
         </div>
         <div class="service">
@@ -88,23 +88,44 @@
       </div>
 
       <div style="text-align: center">
-        <router-link class="link-button" to="/contact/">Get in Touch ➜</router-link>
+        <a class="link-button" href="/contact">Get in Touch ➜</a>
       </div>
 
-      <router-link to="/imprint.html#icon-attribution" style="font-size: 8pt; color: #bbb; display: block; text-align: right">Icons from Flaticon</router-link>
+      <a href="/imprint#icon-attribution" style="font-size: 8pt; color: #bbb; display: block; text-align: right">Icons from Flaticon</a>
     </div>
 
   </div>
 </template>
 
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
+
+const srRef = ref<any>(null)
+
+onMounted(async () => {
+  const ScrollReveal = (await import('scrollreveal')).default
+  const sr = ScrollReveal()
+  srRef.value = sr
+  sr.reveal('.services .service', { scale: 1.0 })
+})
+
+onUnmounted(() => {
+  if (srRef.value) {
+    srRef.value.clean('.services .service')
+  }
+})
+</script>
+
 <style lang="stylus">
 .services-container {
   background: #eef;
+  color: #2c3e50 !important;
 
   .big-title {
     margin-top: 0;
     padding-top: 2.5rem;
     border: 0;
+    color: #2c3e50 !important;
   }
 }
 
@@ -128,33 +149,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    color: #2c3e50 !important;
+
+    .service-icon-container {
+      margin-bottom: 1.25rem;
+    }
 
     .service-icon {
       width: 150px;
-      // padding-top: 5rem;
     }
 
     .service-heading {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
-      font-size: 14pt;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #2c3e50 !important;
     }
 
     p {
-      margin-bottom: 5rem;
+      margin-top: 0;
+      margin-bottom: 4rem;
+      text-align: center;
+      color: #2c3e50 !important;
+    }
+
+    a {
+      color: #ff6600 !important;
+      &:hover {
+        color: #cc5200 !important;
+        text-decoration: underline;
+      }
     }
   }
 }
 </style>
 
-<script>
-export default {
-  mounted () {
-    if (this.$sr) {
-      const sr = this.$sr
-      sr.reveal('.services .service', { scale: 1.0 }) //, 100)
-    }
-  }
-}
-</script>
 

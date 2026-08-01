@@ -1,7 +1,9 @@
 ---
-layout: HomePage
+layout: page
 ---
 
-This is the openHAB Foundation website.
+<script setup>
+import HomePage from '.vitepress/components/HomePage.vue'
+</script>
 
-The Home page is in the `.vuepress/components/HomePage.vue` file.
+<HomePage />

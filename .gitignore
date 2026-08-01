@@ -1,2 +1,10 @@
-vuepress
-node_modules
+# Dependency directories
+node_modules/
+
+# Vitepress
+.vitepress/cache
+.vitepress/dist
+
+# IDEs
+.vscode
+.idea

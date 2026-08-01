@@ -1,11 +1,11 @@
 <template>
   <footer>
-    <a href="#app"><img src="/openhab-logo-square.png" class="footer-logo" /></a>
+    <a href="#app"><img :src="withBase(isDark ? '/openhab-logo-square-dark.svg' : '/openhab-logo-square.svg')" class="footer-logo" /></a>
     <div class="legal">
       <span class="copyright">Copyright © {{year}} by the openHAB Community and the openHAB Foundation e.V.</span>
       <br />
-      <span class="legal-links"><router-link to="/privacy.html">Privacy policy</router-link> |
-      <router-link to="/imprint.html">Imprint</router-link></span>
+      <span class="legal-links"><a href="/privacy">Privacy policy</a> |
+      <a href="/imprint">Imprint</a></span>
     </div>
     <div class="social-icons">
       <a href="https://twitter.com/openhabfdn" target="_blank"><svg class="social-icon twitter"><path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path></svg></a>
@@ -17,35 +17,34 @@
 
 <style lang="stylus">
 footer
-  border-top 1px solid #eaecef
-  margin-bottom -2rem
+  display flex
+  flex-direction column
+  align-items  center
+  border-top 1px solid var(--vp-c-border)
+  padding 2rem
+  text-align center
 
   .footer-logo
     width 70px
     height 70px
-    margin-left -6px
     filter grayscale(100%)
     opacity 0.4
-  background rgb(250,250,252) !important
-  padding 3rem 2.5rem
-  // padding-bottom 6rem
-  text-align center
-  color lighten(black, 25%)
+  .legal
+    margin-top .5rem
+    font-size 10pt
+    color var(--vp-c-text-3)
+    a
+      color var(--vp-c-text-2)
   .social-icons
-    margin-top 3rem
+    margin-top 1.5rem
     .social-icon
       height 35px
       width 35px
       margin 10px
-      fill #777
-      &:hover
-        fill #333
-  .legal
-    font-size 10pt
-    a
-      color black
-    .copyright
-      color #777
+      fill: var(--vp-c-text-3);
+      &:hover {
+        fill: var(--vp-c-text-2);
+      }
 
 @media print
   footer
@@ -60,23 +59,28 @@ footer
       display none
 </style>
 
-<script>
-export default {
-  name: 'Footer',
-  data () {
-    return {
-      year: new Date().getFullYear()
-    }
-  },
-  mounted () {
-    if (this.$sr) {
-      const sr = this.$sr
-    //import('scrollreveal').then(ScrollReveal => {
-      //const sr = new ScrollReveal.default()
-      sr.reveal('.footer-logo', { scale: 0.5 })
-      sr.reveal('.legal', { scale: 1.0 })
-      sr.reveal('.social-icons', { duration: 1000 })
-    }
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
+import { useData, withBase } from 'vitepress'
+
+const { isDark } = useData()
+const srRef = ref<any>(null)
+const year = new Date().getFullYear();
+
+onMounted(async () => {
+  const ScrollReveal = (await import('scrollreveal')).default
+  const sr = ScrollReveal()
+  srRef.value = sr
+  sr.reveal('.footer-logo', { scale: 0.5 })
+  sr.reveal('.legal', { scale: 1.0 })
+  sr.reveal('.social-icons', { duration: 1000 })
+})
+
+onUnmounted(() => {
+  if (srRef.value) {
+    srRef.value.clean('.footer-logo')
+    srRef.value.clean('.legal')
+    srRef.value.clean('.social-icons')
   }
-}
+})
 </script>

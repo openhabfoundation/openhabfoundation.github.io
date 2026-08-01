@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+pageClass: legalPage
 ---
 
 # Privacy Policy

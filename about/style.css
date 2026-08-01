@@ -1,0 +1,17 @@
+.board {
+    padding-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.board-social-icon {
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    fill: var(--vp-c-text-3);
+    &:hover {
+        fill: var(--vp-c-text-2);
+    }
+}
