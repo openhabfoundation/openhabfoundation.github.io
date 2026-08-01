@@ -4,8 +4,9 @@ title: Contact the Foundation
 
 <h1>Contact the Foundation</h1>
 
-<!-- Embedded Google Map -->
-<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.019378555284!2d8.736404315708775!3d49.82330097939379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86f05d03c94a3039!2sopenHAB+Foundation+e.V.!5e0!3m2!1sde!2sde!4v1535355048698"></iframe>
+<!-- Embedded OpenStreetMap -->
+<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.731727600097658%2C49.817510015582464%2C8.746211528778078%2C49.82868164884726&amp;layer=mapnik&amp;marker=49.82310314504076%2C8.738980293273926" style="border: 0;"></iframe>
+<small><a href="https://www.openstreetmap.org/?mlat=49.82310&amp;mlon=8.73898#map=16/49.82310/8.73897" target="_blank" rel="noopener">Größere Karte anzeigen</a></small>
 
 <address>
 <p><strong>openHAB Foundation e.V.</strong><br />Kollwitzweg 10<br />64372 Ober-Ramstadt<br />Germany</p>

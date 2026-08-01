@@ -229,21 +229,17 @@ If your browser does not support web fonts, a standard font is used by your comp
 information about handling user data, can be found at <https://developers.google.com/fonts/faq> and
 in Google's privacy policy at <https://www.google.com/policies/privacy/>.
 
-### Google Maps
+### OpenStreetMap
 
-This site uses the Google Maps map service via an API. It is operated by Google Inc., 1600
-Amphitheatre Parkway, Mountain View, CA 94043, USA.
+This site uses the OpenStreetMap mapping service provided by the OpenStreetMap Foundation (OSMF), St John's Innovation Centre, Cowley Road, Cambridge, CB4 0WS, United Kingdom.
 
-To use Google Maps, it is necessary to save your IP address. This information is generally
-transmitted to a Google server in the USA and stored there. The provider of this site has no
-influence on this data transfer.
+To render the map, a connection to OpenStreetMap servers is established, during which your IP address and technical browser data are transmitted to OSMF servers.
+The provider of this site has no influence on this data transfer.
 
-The use of Google Maps is in the interest of making our website appealing and to facilitate the
-location of places specified by us on the website. This constitutes a justified interest pursuant
-to Art. 6 (1) (f) GDPR.
+The use of OpenStreetMap is in the interest of making our website appealing and to facilitate the location of places specified by us on the website.
+This constitutes a legitimate interest pursuant to Art. 6 (1) (f) GDPR.
 
-Further information about handling user data, can be found in the data protection declaration of
-Google at <https://www.google.de/intl/de/policies/privacy/>.
+Further information about handling user data can be found in OpenStreetMap's privacy policy at <https://wiki.osmfoundation.org/wiki/Privacy_Policy>.
 
 ## openHAB Apps
 
@@ -282,7 +278,7 @@ The app uses Firebase Cloud Messaging to send messages from your openHAB Server 
 Firebase Cloud Messaging is a service provided by Google Inc.
 Further information about this service can be found at <https://firebase.google.com/docs/cloud-messaging/>.
 
-If your openHAB Sitemap contains a map view the Android app connects to [Google Maps](#google-maps).
+If your openHAB Sitemap contains a map view the Android app connects to [Google Maps](https://policies.google.com/privacy).
 
 ### Apple iOS App
 
