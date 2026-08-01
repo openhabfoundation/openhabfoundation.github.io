@@ -21,7 +21,7 @@ onMounted(async () => {
     <li v-for="page in members" :key="page.url" class="member">
 
       <a :href="page.link" target="_blank" class="member-link">
-        <img class="member-image" :src="withBase('/logos/' + page.logo)" :alt="page.title" />
+        <img class="member-image" :src="withBase('/images/members/' + page.logo)" :alt="page.title" />
       </a>
 
       <div class="member-info">

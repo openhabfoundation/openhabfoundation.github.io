@@ -7,7 +7,7 @@
       class="logo-container"
     >
       <img
-        :src="withBase('/logos/' + member.logo)"
+        :src="withBase('/images/members/' + member.logo)"
         :title="member.title"
         :alt="member.title"
         class="member-logo"

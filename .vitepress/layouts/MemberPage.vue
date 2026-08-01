@@ -37,7 +37,7 @@ const formatPhone = (phone: string) => {
         <img
             v-if="frontmatter.logo"
             class="member-logo"
-            :src="withBase('/logos/' + frontmatter.logo)"
+            :src="withBase('/images/members/' + frontmatter.logo)"
             :alt="frontmatter.title"
         >
 
