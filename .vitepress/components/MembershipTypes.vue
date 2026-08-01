@@ -8,8 +8,10 @@
         <div class="panel-heading">
           <h4>Sustaining Member</h4>
           <p>For people who just want to show their appreciation.</p>
-          <span class="price">1<sub>&euro;</sub></span>
-          <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+          <div class="price-container">
+            <span class="price">1<sub>&euro;</sub></span>
+            <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+          </div>
           <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join
             Now!</a>
         </div>
@@ -23,8 +25,10 @@
         <div class="panel-heading">
           <h4>Ordinary Member</h4>
           <p>For individuals who want to support financially or to actively engage themselves.</p>
-          <span class="price">5<sub>&euro;</sub></span>
-          <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+          <div class="price-container">
+            <span class="price">5<sub>&euro;</sub></span>
+            <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+          </div>
           <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join
             Now!</a>
         </div>
@@ -38,8 +42,10 @@
         <div class="panel-heading">
           <h4>Legal Entity</h4>
           <p>For companies and organisations that share our vision.</p>
-          <span class="price">25<sub>&euro;</sub></span>
-          <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+          <div class="price-container">
+            <span class="price">25<sub>&euro;</sub></span>
+            <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+          </div>
           <a href="/forms/Membership-Application-Form-LegalEntity.pdf" class="join-us-button">Join Now!</a>
         </div>
       </div>
@@ -48,23 +54,66 @@
 </template>
 
 <style>
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+  justify-content: center;
+}
+
 .slide-membership-type {
-  flex-grow: 1;
-  flex-basis: calc(30% - 2rem);
+  flex: 1 1 calc(30% - 2rem);
+  max-width: 280px;
+  margin: 1rem;
+  display: flex;
+  align-self: stretch;
 }
 
 .slide-membership-type .panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+
+  .panel-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .panel-heading {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0.5rem 0;
+  }
+
   h4 {
     font-weight: 600;
     line-height: 1.25;
     font-size: 14pt;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   p {
-    height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .price-container {
+    margin-top: auto;
   }
 
   .price {
+    display: block;
     width: 100%;
     font-size: 36pt;
 
@@ -78,6 +127,24 @@
     a {
       text-decoration: none;
     }
+  }
+
+  .join-us-button {
+    margin: 1rem auto 0.5rem;
+  }
+}
+
+@media (max-width: 859px) {
+  .features {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .slide-membership-type {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
   }
 }
 </style>
