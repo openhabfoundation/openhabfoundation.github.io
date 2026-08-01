@@ -19,7 +19,7 @@
               <img class="service-icon" src="./icons/004-server-1.svg" />
             </div>
             <h4 class="service-heading">Infrastructure &amp; Marketing</h4>
-            <p>We run the <a href="https://www.openhab.org/">openHAB official website</a> and maintain the <a href="https://openhab.ci.cloudbees.com/" target="_blank">build server</a>.</p>
+            <p>We run the <a href="https://www.openhab.org/">openHAB official website</a> and maintain the <a href="https://ci.openhab.org/" target="_blank">build server</a>.</p>
           </div>
         </div>
         <div class="service">
