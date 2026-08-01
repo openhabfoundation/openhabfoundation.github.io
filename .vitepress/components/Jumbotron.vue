@@ -1,12 +1,14 @@
 <template>
   <div class="jumbotron">
-    <div style="height: 260px; min-height: 260px; overflow: hidden; position: relative;">
+    <div style="height: 260px; min-height: 260px; overflow: hidden; position: relative">
       <div class="jumbotron-filter">
         <div class="jumbotron-pattern"></div>
       </div>
       <h1 class="welcome jumbotron-title">
         <span class="title-segment">Welcome to the</span>
-        <span class="title-segment logo-segment"><img src="/logo-white.png" alt="openHAB" class="openhab-logo" /></span>
+        <span class="title-segment logo-segment"
+          ><img src="/logo-white.png" alt="openHAB" class="openhab-logo"
+        /></span>
         <span class="title-segment">Foundation!</span>
       </h1>
       <ClientOnly>
@@ -16,14 +18,26 @@
       </ClientOnly>
     </div>
     <div class="content jumbotron-center">
+      <h2>
+        We are a non-profit organisation with the mission to educate the public about the
+        possibilities and benefits of free and open smart home solutions.
+      </h2>
 
-      <h2>We are a non-profit organisation with the mission to educate the public about the possibilities and benefits of free and open smart home solutions.</h2>
+      <p>
+        More and more new technologies and devices are introduced to our living, working and
+        business environment. Although all of them are designed to make our lives easier, we believe
+        they have a common problem: The lack of interoperability, due to incompatible technology
+        stacks and conflicting commercial interests. Market consolidation and cooperation between
+        all stakeholders therefore remains a difficult challenge.
+      </p>
 
-      <p>More and more new technologies and devices are introduced to our living, working and business environment. Although all of them are designed to make our lives easier, we believe they have a common problem: The lack of interoperability, due to incompatible technology stacks and conflicting commercial interests. Market consolidation and cooperation between all stakeholders therefore remains a difficult challenge.</p>
-
-      <p>In our vision, system-wide, multi-vendor interoperability can only succeed if it is free from monetary interests. Free Software is the best option to boost innovation and to make smart home technology available for everybody. Furthermore, Free Software is irreplaceable for research and teaching.</p>
+      <p>
+        In our vision, system-wide, multi-vendor interoperability can only succeed if it is free
+        from monetary interests. Free Software is the best option to boost innovation and to make
+        smart home technology available for everybody. Furthermore, Free Software is irreplaceable
+        for research and teaching.
+      </p>
     </div>
-
   </div>
 </template>
 
@@ -210,27 +224,25 @@
 </style>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
-import Parallaxy from '@lucien144/vue3-parallaxy'
+import { onMounted, onUnmounted, ref } from "vue";
+import Parallaxy from "@lucien144/vue3-parallaxy";
 
-const srRef = ref<any>(null)
+const srRef = ref<any>(null);
 
 onMounted(async () => {
-  const ScrollReveal = (await import('scrollreveal')).default
-  const sr = ScrollReveal()
-  srRef.value = sr
-  sr.reveal('.slide-title span', { scale: 1.0, direction: 'up', duration: 1500 })
-  sr.reveal('.jumbotron h2', { scale: 1.0, direction: 'up', duration: 500, delay: 800 })
-  sr.reveal('.jumbotron p', { scale: 1.0, direction: 'up', duration: 500, delay: 1000 }, 300)
-})
+  const ScrollReveal = (await import("scrollreveal")).default;
+  const sr = ScrollReveal();
+  srRef.value = sr;
+  sr.reveal(".slide-title span", { scale: 1.0, direction: "up", duration: 1500 });
+  sr.reveal(".jumbotron h2", { scale: 1.0, direction: "up", duration: 500, delay: 800 });
+  sr.reveal(".jumbotron p", { scale: 1.0, direction: "up", duration: 500, delay: 1000 }, 300);
+});
 
 onUnmounted(() => {
   if (srRef.value) {
-    srRef.value.clean('.slide-title span')
-    srRef.value.clean('.jumbotron h2')
-    srRef.value.clean('.jumbotron p')
+    srRef.value.clean(".slide-title span");
+    srRef.value.clean(".jumbotron h2");
+    srRef.value.clean(".jumbotron p");
   }
-})
+});
 </script>
-
-

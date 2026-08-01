@@ -3,50 +3,66 @@
     <div class="slide-membership-type">
       <div class="feature panel">
         <div class="panel-body">
-          <img class="img-rounded" src="/images/puzzle-1019766_Individual_250px.jpg" alt="">
+          <img class="img-rounded" src="/images/puzzle-1019766_Individual_250px.jpg" alt="" />
         </div>
         <div class="panel-heading">
           <h4>Sustaining Member</h4>
           <p>For people who just want to show their appreciation.</p>
           <div class="price-container">
             <span class="price">1<sub>&euro;</sub></span>
-            <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+            <span class="period"
+              >per month<sup><a href="#fees">*</a></sup></span
+            >
           </div>
-          <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join
-            Now!</a>
+          <a
+            href="/forms/Membership-Application-Form-Individual.pdf"
+            class="join-us-button"
+            target="_blank"
+            >Join Now!</a
+          >
         </div>
       </div>
     </div>
     <div class="slide-membership-type">
       <div class="feature panel">
         <div class="panel-body">
-          <img class="img-rounded" src="/images/puzzle-1020388_supporter_250px.jpg" alt="">
+          <img class="img-rounded" src="/images/puzzle-1020388_supporter_250px.jpg" alt="" />
         </div>
         <div class="panel-heading">
           <h4>Ordinary Member</h4>
           <p>For individuals who want to support financially or to actively engage themselves.</p>
           <div class="price-container">
             <span class="price">5<sub>&euro;</sub></span>
-            <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+            <span class="period"
+              >per month<sup><a href="#fees">*</a></sup></span
+            >
           </div>
-          <a href="/forms/Membership-Application-Form-Individual.pdf" class="join-us-button" target="_blank">Join
-            Now!</a>
+          <a
+            href="/forms/Membership-Application-Form-Individual.pdf"
+            class="join-us-button"
+            target="_blank"
+            >Join Now!</a
+          >
         </div>
       </div>
     </div>
     <div class="slide-membership-type">
       <div class="feature panel">
         <div class="panel-body">
-          <img class="img-rounded" src="/images/shops-1014037_business_250px.jpg" alt="">
+          <img class="img-rounded" src="/images/shops-1014037_business_250px.jpg" alt="" />
         </div>
         <div class="panel-heading">
           <h4>Legal Entity</h4>
           <p>For companies and organisations that share our vision.</p>
           <div class="price-container">
             <span class="price">25<sub>&euro;</sub></span>
-            <span class="period">per month<sup><a href="#fees">*</a></sup></span>
+            <span class="period"
+              >per month<sup><a href="#fees">*</a></sup></span
+            >
           </div>
-          <a href="/forms/Membership-Application-Form-LegalEntity.pdf" class="join-us-button">Join Now!</a>
+          <a href="/forms/Membership-Application-Form-LegalEntity.pdf" class="join-us-button"
+            >Join Now!</a
+          >
         </div>
       </div>
     </div>
@@ -150,17 +166,17 @@
 </style>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted } from "vue";
 
 onMounted(async () => {
-  const ScrollReveal = (await import('scrollreveal')).default
-  ScrollReveal().reveal('.slide-membership-type', {
+  const ScrollReveal = (await import("scrollreveal")).default;
+  ScrollReveal().reveal(".slide-membership-type", {
     delay: 200,
-    distance: '20px',
-    origin: 'bottom',
+    distance: "20px",
+    origin: "bottom",
     duration: 1000,
     scale: 1.0,
-    interval: 300
+    interval: 300,
   });
-})
+});
 </script>

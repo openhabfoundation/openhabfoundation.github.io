@@ -1,35 +1,58 @@
 <template>
   <div class="our-focus">
-
     <h2 class="big-title">Our Focus</h2>
 
     <div class="home">
       <div class="features focus">
-
-      <div class="feature slide-focus">
-        <div class="focus-icon-container dim">
+        <div class="feature slide-focus">
+          <div class="focus-icon-container dim">
             <img class="focus-icon" :src="openSourceIcon" alt="" />
+          </div>
+          <h2>Free Software</h2>
+          <p>
+            Free Software is
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Gratis_versus_libre"
+              >free as in speech, not free as in beer</a
+            >. We believe that the software that builds the backbone of smart homes must not be
+            closed or restricted, but that everybody must have the freedom to modify and enhance it.
+            We therefore fully support and help to spread the ideal of Free software as proclaimed
+            by the
+            <a target="_blank" href="https://www.fsf.org/">Free Software Foundation (FSF)</a>.
+          </p>
         </div>
-        <h2>Free Software</h2>
-        <p>Free Software is <a target="_blank" href="https://en.wikipedia.org/wiki/Gratis_versus_libre">free as in speech, not free as in beer</a>. We believe that the software that builds the backbone of smart homes must not be closed or restricted, but that everybody must have the freedom to modify and enhance it. We therefore fully support and help to spread the ideal of Free software as proclaimed by the <a target="_blank" href="https://www.fsf.org/">Free Software Foundation (FSF)</a>.</p>
-      </div>
 
-      <div class="feature slide-focus smarthome">
-        <div class="focus-icon-container">
+        <div class="feature slide-focus smarthome">
+          <div class="focus-icon-container">
             <img class="focus-icon" :src="homeIcon" alt="" />
+          </div>
+          <h2>Smart Home</h2>
+          <p>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Home_Automation">Smart Homes</a>
+            are our passion - and therefore we strive to make its benefits better known to the
+            public and also to educate people about associated problems and risks. We specifically
+            believe that smart homes must not mandatorily depend on cloud services, but should work
+            offline as well. This not only assures the independency from the internet, but also
+            addresses data privacy concerns.
+          </p>
         </div>
-        <h2>Smart Home</h2>
-        <p><a target="_blank" href="https://en.wikipedia.org/wiki/Home_Automation">Smart Homes</a> are our passion - and therefore we strive to make its benefits better known to the public and also to educate people about associated problems and risks. We specifically believe that smart homes must not mandatorily depend on cloud services, but should work offline as well. This not only assures the independency from the internet, but also addresses data privacy concerns.</p>
-      </div>
 
-      <div class="feature slide-focus openhab">
-        <div class="focus-icon-container">
-            <img class="focus-icon" :src="withBase(isDark ? '/openhab-logo-square-dark.svg' : '/openhab-logo-square.svg')" alt="" />
+        <div class="feature slide-focus openhab">
+          <div class="focus-icon-container">
+            <img
+              class="focus-icon"
+              :src="withBase(isDark ? '/openhab-logo-square-dark.svg' : '/openhab-logo-square.svg')"
+              alt=""
+            />
+          </div>
+          <h2>openHAB</h2>
+          <p>
+            <a target="_blank" href="https://www.openhab.org">openHAB</a> is one of the most popular
+            open source software solutions for smart homes. It leaves full control and utmost
+            flexibility to the user and is able to serve as an integration point for most smart home
+            products on the market. It focuses on local integration, following the principle of an
+            "Intranet of Things" and has a huge active community of users and developers
+          </p>
         </div>
-        <h2>openHAB</h2>
-        <p><a target="_blank" href="https://www.openhab.org">openHAB</a> is one of the most popular open source software solutions for smart homes. It leaves full control and utmost flexibility to the user and is able to serve as an integration point for most smart home products on the market. It focuses on local integration, following the principle of an "Intranet of Things" and has a huge active community of users and developers</p>
-      </div>
-
       </div>
     </div>
 
@@ -40,27 +63,27 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
-import { useData, withBase } from 'vitepress'
-import openSourceIcon from './icons/open-source.svg'
-import homeIcon from './icons/home.svg'
+import { onMounted, onUnmounted, ref } from "vue";
+import { useData, withBase } from "vitepress";
+import openSourceIcon from "./icons/open-source.svg";
+import homeIcon from "./icons/home.svg";
 
-const { isDark } = useData()
+const { isDark } = useData();
 
-const srRef = ref<any>(null)
+const srRef = ref<any>(null);
 
 onMounted(async () => {
-  const ScrollReveal = (await import('scrollreveal')).default
-  const sr = ScrollReveal()
-  srRef.value = sr
-  sr.reveal('.slide-focus', { scale: 1.0 }, 200)
-})
+  const ScrollReveal = (await import("scrollreveal")).default;
+  const sr = ScrollReveal();
+  srRef.value = sr;
+  sr.reveal(".slide-focus", { scale: 1.0 }, 200);
+});
 
 onUnmounted(() => {
   if (srRef.value) {
-    srRef.value.clean('.slide-focus')
+    srRef.value.clean(".slide-focus");
   }
-})
+});
 </script>
 
 <style lang="stylus">
@@ -179,5 +202,3 @@ onUnmounted(() => {
     background white
     color #2196f3
 </style>
-
-

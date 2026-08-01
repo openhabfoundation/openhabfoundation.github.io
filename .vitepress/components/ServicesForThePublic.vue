@@ -4,13 +4,16 @@
 
     <div class="content">
       <div class="services">
-      <div class="service">
-        <div class="service-body">
-          <div class="service-icon-container">
-          <img class="service-icon" src="./icons/001-question.svg" />
-          </div>
-          <h4 class="service-heading">Consultancy</h4>
-            <p>We are running the <a href="http://community.openhab.org/">openHAB Forum</a>, where we answer questions and provide support.</p>
+        <div class="service">
+          <div class="service-body">
+            <div class="service-icon-container">
+              <img class="service-icon" src="./icons/001-question.svg" />
+            </div>
+            <h4 class="service-heading">Consultancy</h4>
+            <p>
+              We are running the <a href="http://community.openhab.org/">openHAB Forum</a>, where we
+              answer questions and provide support.
+            </p>
           </div>
         </div>
         <div class="service">
@@ -19,7 +22,10 @@
               <img class="service-icon" src="./icons/004-server-1.svg" />
             </div>
             <h4 class="service-heading">Infrastructure &amp; Marketing</h4>
-            <p>We run the <a href="https://www.openhab.org/">openHAB official website</a> and maintain the <a href="https://ci.openhab.org/" target="_blank">build server</a>.</p>
+            <p>
+              We run the <a href="https://www.openhab.org/">openHAB official website</a> and
+              maintain the <a href="https://ci.openhab.org/" target="_blank">build server</a>.
+            </p>
           </div>
         </div>
         <div class="service">
@@ -28,7 +34,10 @@
               <img class="service-icon" src="./icons/005-book.svg" />
             </div>
             <h4 class="service-heading">Reference Documentation</h4>
-            <p>As documentation is often scarce, we help on providing a detailed <a href="https://www.openhab.org/docs/" target="_blank">user reference</a>.</p>
+            <p>
+              As documentation is often scarce, we help on providing a detailed
+              <a href="https://www.openhab.org/docs/" target="_blank">user reference</a>.
+            </p>
           </div>
         </div>
         <div class="service">
@@ -37,7 +46,11 @@
               <img class="service-icon" src="./icons/003-cloud.svg" />
             </div>
             <h4 class="service-heading">Online Demo</h4>
-            <p>We are operating an <a href="https://demo.openhab.org/" target="_blank">openHAB demo server</a>, which gives an easy first impression of it.</p>
+            <p>
+              We are operating an
+              <a href="https://demo.openhab.org/" target="_blank">openHAB demo server</a>, which
+              gives an easy first impression of it.
+            </p>
           </div>
         </div>
         <div class="service">
@@ -64,7 +77,14 @@
               <img class="service-icon" src="./icons/002-server.svg" />
             </div>
             <h4 class="service-heading">Proof-of-Concepts</h4>
-            <p>We are running <a href="http://www.myopenhab.org" target="_blank">myopenHAB.org</a> to show case the <a href="https://github.com/openhab/openhab-cloud#openhab-cloud" target="_blank">openHAB Cloud</a> features.</p>
+            <p>
+              We are running <a href="http://www.myopenhab.org" target="_blank">myopenHAB.org</a> to
+              show case the
+              <a href="https://github.com/openhab/openhab-cloud#openhab-cloud" target="_blank"
+                >openHAB Cloud</a
+              >
+              features.
+            </p>
           </div>
         </div>
         <div class="service">
@@ -82,7 +102,11 @@
               <img class="service-icon" src="./icons/009-writer.svg" />
             </div>
             <h4 class="service-heading">Blogging</h4>
-            <p>Our members regularly <a href="https://www.openhab.org/blog/" target="_blank">blog about smart home</a> topics to share their insights.</p>
+            <p>
+              Our members regularly
+              <a href="https://www.openhab.org/blog/" target="_blank">blog about smart home</a>
+              topics to share their insights.
+            </p>
           </div>
         </div>
       </div>
@@ -91,29 +115,32 @@
         <a class="link-button" href="/contact">Get in Touch ➜</a>
       </div>
 
-      <a href="/imprint#icon-attribution" style="font-size: 8pt; color: #bbb; display: block; text-align: right">Icons from Flaticon</a>
+      <a
+        href="/imprint#icon-attribution"
+        style="font-size: 8pt; color: #bbb; display: block; text-align: right"
+        >Icons from Flaticon</a
+      >
     </div>
-
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from "vue";
 
-const srRef = ref<any>(null)
+const srRef = ref<any>(null);
 
 onMounted(async () => {
-  const ScrollReveal = (await import('scrollreveal')).default
-  const sr = ScrollReveal()
-  srRef.value = sr
-  sr.reveal('.services .service', { scale: 1.0 })
-})
+  const ScrollReveal = (await import("scrollreveal")).default;
+  const sr = ScrollReveal();
+  srRef.value = sr;
+  sr.reveal(".services .service", { scale: 1.0 });
+});
 
 onUnmounted(() => {
   if (srRef.value) {
-    srRef.value.clean('.services .service')
+    srRef.value.clean(".services .service");
   }
-})
+});
 </script>
 
 <style lang="stylus">
@@ -214,5 +241,3 @@ html.dark .services-container {
   }
 }
 </style>
-
-

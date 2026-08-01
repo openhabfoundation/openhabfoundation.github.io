@@ -17,24 +17,24 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
-import { withBase } from 'vitepress'
-import { data as members } from '../loaders/members.data.mts'
+import { onMounted, onUnmounted, ref } from "vue";
+import { withBase } from "vitepress";
+import { data as members } from "../loaders/members.data.mts";
 
-const srRef = ref<any>(null)
+const srRef = ref<any>(null);
 
 onMounted(async () => {
-  const ScrollReveal = (await import('scrollreveal')).default
-  const sr = ScrollReveal()
-  srRef.value = sr
-  sr.reveal('.member-logo', {})
-})
+  const ScrollReveal = (await import("scrollreveal")).default;
+  const sr = ScrollReveal();
+  srRef.value = sr;
+  sr.reveal(".member-logo", {});
+});
 
 onUnmounted(() => {
   if (srRef.value) {
-    srRef.value.clean('.member-logo')
+    srRef.value.clean(".member-logo");
   }
-})
+});
 </script>
 
 <style lang="stylus">
@@ -86,5 +86,3 @@ onUnmounted(() => {
   }
 }
 </style>
-
-

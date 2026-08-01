@@ -33,6 +33,16 @@ pnpm install
 
 ## Development
 
+### Format Code
+
+Format the code with oxfmt:
+
+```bash
+pnpm run format
+```
+
+### Development Server
+
 Start the local development server with hot-reloading:
 
 ```bash

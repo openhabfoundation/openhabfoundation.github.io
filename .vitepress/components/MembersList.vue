@@ -1,27 +1,30 @@
 <script setup lang="js">
-import { data as members } from '../loaders/members.data.mts'
-import { withBase } from 'vitepress'
-import { onMounted } from 'vue'
+import { data as members } from "../loaders/members.data.mts";
+import { withBase } from "vitepress";
+import { onMounted } from "vue";
 
 onMounted(async () => {
-  const ScrollReveal = (await import('scrollreveal')).default
-  ScrollReveal().reveal('.member', {
+  const ScrollReveal = (await import("scrollreveal")).default;
+  ScrollReveal().reveal(".member", {
     delay: 100,
-    distance: '20px',
-    origin: 'bottom',
+    distance: "20px",
+    origin: "bottom",
     duration: 500,
     scale: 1.0,
-    interval: 150
+    interval: 150,
   });
-})
+});
 </script>
 
 <template>
   <ul class="member-list">
     <li v-for="page in members" :key="page.url" class="member">
-
       <a :href="page.link" target="_blank" class="member-link">
-        <img class="member-image" :src="withBase('/images/members/' + page.logo)" :alt="page.title" />
+        <img
+          class="member-image"
+          :src="withBase('/images/members/' + page.logo)"
+          :alt="page.title"
+        />
       </a>
 
       <div class="member-info">
@@ -68,7 +71,7 @@ onMounted(async () => {
 }
 
 .member-image {
-  padding: .5rem;
+  padding: 0.5rem;
   max-height: 8em;
   max-width: 8em;
   object-fit: contain;

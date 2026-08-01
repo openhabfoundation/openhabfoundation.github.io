@@ -24,17 +24,15 @@
 
       <Footer />
     </div>
-
   </div>
-
 </template>
 
 <script setup lang="ts">
-import Jumbotron from './Jumbotron.vue'
-import OurFocus from './OurFocus.vue'
-import ServicesForThePublic from './ServicesForThePublic.vue'
-import OurMembers from './OurMembers.vue'
-import Footer from './Footer.vue'
+import Jumbotron from "./Jumbotron.vue";
+import OurFocus from "./OurFocus.vue";
+import ServicesForThePublic from "./ServicesForThePublic.vue";
+import OurMembers from "./OurMembers.vue";
+import Footer from "./Footer.vue";
 </script>
 
 <style lang="stylus">

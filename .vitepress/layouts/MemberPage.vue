@@ -1,54 +1,65 @@
 <script setup lang="ts">
-import { useData, withBase } from 'vitepress'
+import { useData, withBase } from "vitepress";
 
-const { page, frontmatter } = useData()
+const { page, frontmatter } = useData();
 
 const formatPhone = (phone: string) => {
-  return phone ? phone.replace(/ /g, '').replace(/-/g, '') : ''
-}
+  return phone ? phone.replace(/ /g, "").replace(/-/g, "") : "";
+};
 </script>
 
 <template>
   <div class="vp-doc member-page-container">
-      <a :href="withBase('/members/')" class="back-link">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon"
-        >
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-        </svg>
-        &nbsp;
-        Members
-      </a>
+    <a :href="withBase('/members/')" class="back-link">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon"
+      >
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      &nbsp; Members
+    </a>
 
     <div class="member-page-content">
       <aside class="member-details">
         <h1 class="member-name-mobile">{{ page.title }}</h1>
 
         <img
-            v-if="frontmatter.logo"
-            class="member-logo"
-            :src="withBase('/images/members/' + frontmatter.logo)"
-            :alt="frontmatter.title"
-        >
+          v-if="frontmatter.logo"
+          class="member-logo"
+          :src="withBase('/images/members/' + frontmatter.logo)"
+          :alt="frontmatter.title"
+        />
 
         <div class="member-contact">
           <ul>
-            <li v-if="frontmatter.address1"><address>{{ frontmatter.address1 }}</address></li>
-            <li v-if="frontmatter.address2"><address>{{ frontmatter.address2 }}</address></li>
-            <li v-if="frontmatter.address3"><address>{{ frontmatter.address3 }}</address></li>
-            <li v-if="frontmatter.address4"><address>{{ frontmatter.address4 }}</address></li>
-            <li v-if="frontmatter.city"><address>{{ frontmatter.city }}</address></li>
-            <li v-if="frontmatter.country"><address>{{ frontmatter.country }}</address></li>
+            <li v-if="frontmatter.address1">
+              <address>{{ frontmatter.address1 }}</address>
+            </li>
+            <li v-if="frontmatter.address2">
+              <address>{{ frontmatter.address2 }}</address>
+            </li>
+            <li v-if="frontmatter.address3">
+              <address>{{ frontmatter.address3 }}</address>
+            </li>
+            <li v-if="frontmatter.address4">
+              <address>{{ frontmatter.address4 }}</address>
+            </li>
+            <li v-if="frontmatter.city">
+              <address>{{ frontmatter.city }}</address>
+            </li>
+            <li v-if="frontmatter.country">
+              <address>{{ frontmatter.country }}</address>
+            </li>
 
             <li v-if="frontmatter.phone">
               <a :href="'tel:' + formatPhone(frontmatter.phone)">{{ frontmatter.phone }}</a>
@@ -63,11 +74,20 @@ const formatPhone = (phone: string) => {
             </li>
 
             <li v-if="frontmatter.twitter">
-              Twitter: <a :href="'https://twitter.com/' + frontmatter.twitter" target="_blank" rel="noopener">@{{ frontmatter.twitter }}</a>
+              Twitter:
+              <a :href="'https://twitter.com/' + frontmatter.twitter" target="_blank" rel="noopener"
+                >@{{ frontmatter.twitter }}</a
+              >
             </li>
 
             <li v-if="frontmatter.github">
-              GitHub: <a :href="'https://github.com/' + frontmatter.github" target="_blank" rel="noopener">{{ frontmatter.github }}</a>
+              GitHub:
+              <a
+                :href="'https://github.com/' + frontmatter.github"
+                target="_blank"
+                rel="noopener"
+                >{{ frontmatter.github }}</a
+              >
             </li>
           </ul>
         </div>
