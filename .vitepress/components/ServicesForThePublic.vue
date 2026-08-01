@@ -129,6 +129,34 @@ onUnmounted(() => {
   }
 }
 
+html.dark .services-container {
+  background: #1b2432;
+  color: var(--vp-c-text-1, #f8fafc) !important;
+
+  .big-title {
+    color: #ffffff !important;
+  }
+
+  .service-body {
+    color: var(--vp-c-text-1, #f8fafc) !important;
+
+    .service-heading {
+      color: #ffffff !important;
+    }
+
+    p {
+      color: #f1f5f9 !important;
+    }
+
+    a {
+      color: #ff8533 !important;
+      &:hover {
+        color: #ffa366 !important;
+      }
+    }
+  }
+}
+
 .services {
   display: flex;
   flex-wrap: wrap;

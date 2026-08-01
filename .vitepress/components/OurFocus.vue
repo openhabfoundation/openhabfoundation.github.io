@@ -24,7 +24,7 @@
 
       <div class="feature slide-focus openhab">
         <div class="focus-icon-container">
-            <img class="focus-icon" :src="withBase('/openhab-logo-square.svg')" alt="" />
+            <img class="focus-icon" :src="withBase(isDark ? '/openhab-logo-square-dark.svg' : '/openhab-logo-square.svg')" alt="" />
         </div>
         <h2>openHAB</h2>
         <p><a target="_blank" href="https://www.openhab.org">openHAB</a> is one of the most popular open source software solutions for smart homes. It leaves full control and utmost flexibility to the user and is able to serve as an integration point for most smart home products on the market. It focuses on local integration, following the principle of an "Intranet of Things" and has a huge active community of users and developers</p>
@@ -68,6 +68,12 @@ onUnmounted(() => {
     background #2196f3
     color white
     padding-bottom 2rem
+
+    html.dark &
+      background #14385c
+
+      .link-button.white:hover
+        color #14385c
 
     .big-title
       padding-top 2.5rem
