@@ -30,6 +30,12 @@ export default defineConfig({
     search: undefined,
     siteTitle: false,
     aside: false,
+    socialLinks: [
+      { icon: "github", link: "https://github.com/openhab" },
+      { icon: "x", link: "https://x.com/openhabfdn" },
+      { icon: "youtube", link: "https://www.youtube.com/channel/UC7OK88DW0La_BJlcXZg8ydQ" },
+      { icon: "linkedin", link: "https://www.linkedin.com/company/openhab-foundation-e-v" },
+    ],
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/about/" },
